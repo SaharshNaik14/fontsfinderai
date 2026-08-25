@@ -1,0 +1,50 @@
+---
+import Layout from '../../components/Layout.astro';
+import { guides, getGuide } from '../../data/guides';
+
+export const prerender = true;
+
+export function getStaticPaths() {
+	return guides.map((g) => ({ params: { slug: g.slug } }));
+}
+
+const { slug } = Astro.params;
+const guide = getGuide(slug ?? '');
+
+if (!guide) {
+	return new Response('Not found', { status: 404 });
+}
+---
+
+<Layout
+	path="/guides"
+	title={guide.title}
+	description={guide.description}
+	canonical={`/guides/${guide.slug}`}
+>
+	<article class="container-page py-12 sm:py-16">
+		<nav class="mb-6" aria-label="Breadcrumb">
+			<a href="/guides" class="text-body-sm text-link hover:underline">← All guides</a>
+		</nav>
+		<p class="eyebrow">Guide · {guide.read} read</p>
+		<h1 class="mt-3 max-w-3xl text-display-lg font-semibold tracking-tight">{guide.title}</h1>
+
+		<div class="prose mt-8 max-w-3xl">
+			{guide.body.map((para) => <p set:html={para} />)}
+		</div>
+
+		<div class="mt-12 max-w-3xl rounded-lg border border-hairline bg-canvas-soft p-6">
+			<h2 class="text-display-sm font-semibold tracking-tight">Try it on your own image</h2>
+			<p class="mt-2 text-body-md text-body">
+				Paste a screenshot into the font finder and get ranked matches against 1,800+ free fonts —
+				free and unlimited, entirely in your browser.
+			</p>
+			<a href="/" class="btn btn-primary btn-sm mt-4">Identify a font</a>
+		</div>
+
+		<p class="mt-10 max-w-3xl text-body-md text-body">
+			Next: <a class="text-link hover:underline" href="/faq">frequently asked questions</a> about
+			identifying fonts.
+		</p>
+	</article>
+</Layout>

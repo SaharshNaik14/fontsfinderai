@@ -1,0 +1,222 @@
+---
+import Layout from '../../components/Layout.astro';
+import { getFreeFont, getPaidFont, idToFamily, googleFonts } from '../../lib/catalog';
+import type { GoogleFont } from '../../lib/types';
+import { SITE } from '../../lib/site';
+
+const { slug } = Astro.params;
+
+const free = slug ? getFreeFont(slug) : undefined;
+const paid = slug ? getPaidFont(slug) : undefined;
+
+if (!free && !paid) {
+	return new Response('Not found', { status: 404 });
+}
+
+// Similar faces: same category, closest in overall popularity. A simple,
+// honest proxy for "you might also like" without fabricating measurements.
+const similarFonts: GoogleFont[] = free
+	? googleFonts
+			.filter((f) => f.id !== free.id && f.category === free.category)
+			.sort((a, b) => Math.abs(a.popularity - free.popularity) - Math.abs(b.popularity - free.popularity))
+			.slice(0, 6)
+	: [];
+
+const previewChars = Array.from(new Set(SITE.previewText.replace(/\s+/g, ''))).join('');
+const family = free?.family ?? paid?.name ?? '';
+const category = free?.category ?? paid?.category ?? 'sans-serif';
+const title = free ? free.family : `${paid!.name} (paid font)`;
+
+const googleSpecimen = free ? `https://fonts.google.com/specimen/${encodeURIComponent(free.family)}` : '';
+const cssUrl = `https://fonts.googleapis.com/css2?family=${encodeURIComponent(family)}&text=${previewChars}&display=swap`;
+---
+
+<Layout
+	path="/fonts"
+	title={title}
+	description={
+		free
+			? `${free.family} is a free ${free.category} typeface${free.designer ? ` designed by ${free.designer}` : ''}. Preview it, copy the CSS, or download it from Google Fonts.`
+			: `${paid!.name} is a ${paid!.category} typeface from ${paid!.foundry} (${paid!.price}). See its free alternative, ${idToFamily(paid!.freeAlt)}.`
+	}
+	canonical={`/fonts/${slug}`}
+>
+	{free && <link rel="stylesheet" href={cssUrl} />}
+	<section class="container-page py-12 sm:py-16">
+		<nav class="mb-6" aria-label="Breadcrumb">
+			<a href="/fonts" class="text-body-sm text-link hover:underline">← All fonts</a>
+		</nav>
+
+		<div class="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
+			<div>
+				<div class="flex flex-wrap items-center gap-3">
+					<h1 class="text-display-lg font-semibold tracking-tight">{title}</h1>
+					{free?.featured && <span class="featured-badge">Featured</span>}
+				</div>
+				<p class="mt-2 text-body-sm text-mute capitalize">{category}</p>
+
+				<div
+					class="preview-panel mt-6"
+					style={`font-family: "${family}", sans-serif`}
+					aria-label={`${family} preview`}
+				>
+					The quick brown fox jumps over the lazy dog
+				</div>
+				<div
+					class="preview-panel preview-panel-2"
+					style={`font-family: "${family}", sans-serif`}
+					aria-hidden="true"
+				>
+					{family} — 0123456789 &amp; AaBbCc
+				</div>
+
+				{free && (
+					<div class="mt-6 flex flex-wrap gap-3">
+						<a class="btn btn-primary" href={googleSpecimen} target="_blank" rel="noopener">Download from Google Fonts</a>
+						<button type="button" class="btn btn-ghost" data-copy-css={family}>Copy CSS</button>
+					</div>
+				)}
+				{paid && (
+					<div class="mt-6 flex flex-wrap gap-3">
+						<a class="btn btn-primary" href={paid.url} target="_blank" rel="noopener">View &amp; buy</a>
+						<a class="btn btn-ghost" href={`/fonts/${paid.freeAlt}`}>Free alternative: {idToFamily(paid.freeAlt)}</a>
+					</div>
+				)}
+			</div>
+
+			<aside class="h-fit rounded-lg border border-hairline bg-canvas-soft p-6">
+				<h2 class="eyebrow">Details</h2>
+				<dl class="mt-4 space-y-3 text-body-sm">
+					<div class="flex justify-between gap-4">
+						<dt class="text-mute">Category</dt>
+						<dd class="capitalize">{category}</dd>
+					</div>
+					{free && (
+						<>
+							<div class="flex justify-between gap-4">
+								<dt class="text-mute">Designer</dt>
+								<dd class="text-right">{free.designer || 'Various'}</dd>
+							</div>
+							<div class="flex justify-between gap-4">
+								<dt class="text-mute">Weights</dt>
+								<dd>{free.weight}</dd>
+							</div>
+							<div class="flex justify-between gap-4">
+								<dt class="text-mute">Italic</dt>
+								<dd>{free.italic ? 'Yes' : 'No'}</dd>
+							</div>
+							<div class="flex justify-between gap-4">
+								<dt class="text-mute">Variable</dt>
+								<dd>{free.variable ? 'Yes' : 'No'}</dd>
+							</div>
+							<div class="flex justify-between gap-4">
+								<dt class="text-mute">Popularity</dt>
+								<dd>#{free.popularity}</dd>
+							</div>
+						</>
+					)}
+					{paid && (
+						<>
+							<div class="flex justify-between gap-4">
+								<dt class="text-mute">Foundry</dt>
+								<dd>{paid.foundry}</dd>
+							</div>
+							<div class="flex justify-between gap-4">
+								<dt class="text-mute">Price</dt>
+								<dd>{paid.price}</dd>
+							</div>
+							<div class="flex justify-between gap-4">
+								<dt class="text-mute">License</dt>
+								<dd>Commercial</dd>
+							</div>
+							<div class="flex justify-between gap-4">
+								<dt class="text-mute">Free alt</dt>
+								<dd><a class="text-link" href={`/fonts/${paid.freeAlt}`}>{idToFamily(paid.freeAlt)}</a></dd>
+							</div>
+						</>
+					)}
+				</dl>
+			</aside>
+		</div>
+
+		{free && (
+			<section class="mt-14">
+				<h2 class="text-display-md font-semibold tracking-tight">About {free.family}</h2>
+				<div class="prose mt-4">
+					<p>
+						{free.family} is a {free.category} typeface{free.designer ? ` designed by ${free.designer}` : ''}
+						{free.dateAdded ? `, added to Google Fonts in ${free.dateAdded.slice(0, 4)}` : ''}.
+						It's available in {free.weight.split(' ').length} weight{free.weight.split(' ').length > 1 ? 's' : ''}
+						{free.italic ? ', including italics' : ''}
+						{free.variable ? ', as a variable font' : ''}.
+					</p>
+					<p>
+						This is one of {free.subsets.length} character set{free.subsets.length > 1 ? 's' : ''} supported
+						({free.subsets.join(', ')}). Being free and open source, it's a great choice for web projects,
+						print, and branding — and it's a frequent result in the{' '}
+						<a class="text-link" href="/#matcher">font finder</a>.
+					</p>
+					<p>
+						Putting it on a site? See the guide to{' '}
+						<a class="text-link" href="/guides/use-custom-fonts-on-the-web">using custom fonts on the web</a>.
+					</p>
+				</div>
+
+				<div class="mt-6 flex flex-wrap gap-2">
+					{free.weight.split(' ').map((w) => (
+						<span
+							class="rounded-full border border-hairline bg-canvas-soft px-3 py-1 text-caption text-body"
+							style={`font-family: "${family}", sans-serif; font-weight: ${w};`}
+						>
+							{family} {w}
+						</span>
+					))}
+				</div>
+			</section>
+		)}
+
+		{similarFonts.length > 0 && (
+			<section class="mt-14">
+				<h2 class="text-display-md font-semibold tracking-tight">Similar free {category} fonts</h2>
+				<p class="mt-2 max-w-2xl text-body-md text-body">
+					Other open-source faces in the same category, closest in overall popularity.
+				</p>
+				<div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+					{similarFonts.map((f) => (
+						<a
+							href={`/fonts/${f.id}`}
+							class="rounded-lg border border-hairline bg-canvas p-5 shadow-level-1 transition-shadow hover:shadow-level-2"
+						>
+							<div class="truncate text-2xl" style={`font-family: "${f.family}", sans-serif`}>
+								The quick brown fox
+							</div>
+							<div class="mt-2 flex items-center justify-between gap-2">
+								<span class="font-medium">{f.family}</span>
+								<span class="text-caption capitalize text-mute">{f.category}</span>
+							</div>
+						</a>
+					))}
+				</div>
+			</section>
+		)}
+
+		<section class="mt-14">
+			<h2 class="text-display-md font-semibold tracking-tight">Still not sure?</h2>
+			<p class="mt-2 max-w-2xl text-body-md text-body">
+				Upload an image and let the AI identify the exact typeface, then compare it with {family} and
+				hundreds of others.
+			</p>
+			<a href="/#matcher" class="btn btn-primary mt-4">Identify a font from an image</a>
+		</section>
+	</section>
+</Layout>
+
+<script>
+	const family = document.querySelector('[data-copy-css]')?.getAttribute('data-copy-css');
+	const copyBtn = document.querySelector('[data-copy-css]');
+	copyBtn?.addEventListener('click', () => {
+		navigator.clipboard?.writeText(`font-family: "${family}", sans-serif;`);
+		copyBtn.textContent = 'Copied!';
+		setTimeout(() => (copyBtn.textContent = 'Copy CSS'), 1200);
+	});
+</script>

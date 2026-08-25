@@ -1,0 +1,161 @@
+---
+import Layout from '../components/Layout.astro';
+
+interface Faq {
+	q: string;
+	a: string;
+}
+
+interface FaqSection {
+	title: string;
+	faqs: Faq[];
+}
+
+const faqSections: FaqSection[] = [
+	{
+		title: 'Identifying fonts',
+		faqs: [
+			{
+				q: 'What is a font finder?',
+				a: 'A font finder — sometimes called a “what the font” tool — tells you the name of a typeface when you show it an image. Fonts Finder AI is one such tool: upload a picture of the text and it names the font, splits the results into free and paid, and points you to a <a class="text-link" href="/tools/free-font-alternative-finder">free alternative</a> whenever the original is a commercial typeface.',
+			},
+			{
+				q: 'Can Google identify a font?',
+				a: 'Google Search can’t name a font from an image on its own. What Google does offer is the Google Fonts library — a free, open-source catalog we search as part of the results. For actual identification, <a class="text-link" href="/">upload your image here</a> and we compare its letterforms against 1,800+ typefaces, Google Fonts included.',
+			},
+			{
+				q: 'How can I identify a type of font?',
+				a: 'The fastest way is to let a font finder read the image for you. Open the <a class="text-link" href="/">matcher</a>, upload a clear photo or screenshot, and drag to crop just the word you want identified. Your browser compares the letter shapes against more than 1,800 typefaces and ranks every match by similarity. Three tips for a precise result: crop tight around one word, keep letters at 3+ per crop, and skip heavy effects like shadows or outlines.',
+			},
+			{
+				q: 'How to see which font is used?',
+				a: 'If the text is on a live website, open your browser’s inspector, select the text, and read the computed font-family rule — that reveals the font instantly. For images, logos, posters or screenshots, upload the picture to a font finder instead. Our <a class="text-link" href="/tools/logo-font-identifier">logo font identifier</a> handles drawn lettering too.',
+			},
+			{
+				q: 'Can I use AI to identify a font?',
+				a: 'Yes — Fonts Finder AI combines automatic letter reading with a shape-matching engine that compares glyphs. The detected characters drive a render-and-compare pass that re-checks the top candidates against your actual pixels, so you get a confident answer in seconds without your image ever leaving the browser.',
+			},
+			{
+				q: 'Is there a free font finder?',
+				a: 'Yes. <a class="text-link" href="/">Fonts Finder AI</a> is free and unlimited — no account, no credits, no paywall. Identify as many fonts as you like, as often as you like. Every commercial match also includes a free alternative, so you can keep working without spending anything on the font itself.',
+			},
+			{
+				q: 'How to match a font?',
+				a: 'Matching means finding the exact family or the closest lookalike. Upload a clear sample and our matcher ranks the candidates, with the strongest match first. When the exact font is paid, we also list the closest free fonts so you can replicate the look within any budget. The preview box shows every candidate set in your own words before you commit.',
+			},
+			{
+				q: 'Can I take a picture of a font and find it?',
+				a: 'Absolutely. Snap a photo of a sign, poster, book cover or product package, then upload it to the matcher. Keep the text flat and well-lit for the best read. Screenshots beat photos whenever you have the choice — see the <a class="text-link" href="/tools/screenshot-font-finder">screenshot font finder</a> for the ideal workflow.',
+			},
+			{
+				q: 'Where can I find free fonts?',
+				a: 'The Google Fonts library is the largest source of free, open-source typefaces, and our <a class="text-link" href="/fonts">fonts page</a> covers more than 1,800 of them, browsable by category. Every paid font we list also links to a free alternative, so you can find a match and download a usable free version from one place.',
+			},
+			{
+				q: 'How to find a specific text font?',
+				a: 'If you only have an image, upload it to the <a class="text-link" href="/">matcher</a> and we’ll name the family. If you already know roughly what it looks like, browse the catalog by category — serif, sans-serif, display, handwriting or monospace. Once you have a name, open the font’s detail page for specimen previews, weights and the embed code.',
+			},
+			{
+				q: 'How do I use Google Fonts?',
+				a: 'There are three easy ways. Browse fonts.google.com and hit “Get font”. Use our <a class="text-link" href="/fonts">fonts page</a> to browse the same open-source catalog with simpler filters. Or open any font detail page here and copy the provided link into your site’s CSS — see our guide to <a class="text-link" href="/guides/use-custom-fonts-on-the-web">using custom fonts on the web</a>.',
+			},
+			{
+				q: 'How to identify a font in a PDF?',
+				a: 'A PDF usually records its own fonts internally — checking that beats any visual match. If the text is scanned or flattened, screenshot the region at 200% zoom and run it through the <a class="text-link" href="/tools/pdf-font-detector">PDF font detector</a>; the walkthrough covers both routes.',
+			},
+			{
+				q: 'Can I create a font using AI?',
+				a: 'AI can help generate letterforms, but making a usable font is still a design process — you’ll want to refine glyphs, spacing and kerning in a font editor such as FontForge or Glyphs. A font finder helps on the other side of the workflow: identifying existing fonts so you can study their structure or find a free base to build from.',
+			},
+		],
+	},
+	{
+		title: 'Using Fonts Finder AI',
+		faqs: [
+			{
+				q: 'Is Fonts Finder AI really free?',
+				a: 'Yes. Font identification is free and unlimited. There is no account, no paywall, no credit system, and nothing to upgrade. The whole matching pipeline runs in your own browser, so extra scans cost us almost nothing.',
+			},
+			{
+				q: 'Do I need to type the text shown in my image?',
+				a: 'No. The tool reads the letters from your image automatically and uses them for matching. You’ll see a small “detected letters” editor above your results — if a letter was misread, fix it there and re-match for an even sharper result. What matters most is not typing, but cropping: select just the word you want identified before you run the match.',
+			},
+			{
+				q: 'Do you store my uploaded images?',
+				a: 'No — and we couldn’t even if we wanted to, because your image never leaves your browser. The entire matching pipeline runs client-side: the letter shapes are compared against a compact font database your browser downloads, and nothing is uploaded to any server.',
+			},
+			{
+				q: 'What do the match labels mean?',
+				a: 'Each result carries a label instead of a percentage, because letter-shape scores tend to cluster so tightly that percentages would be misleading. “Strong match” means one font clearly beat the rest; “Likely match” means it pulled ahead but not decisively; “Possible match” means several faces tied; “Similar font” means the result is in the right neighborhood but not confirmed. When only one or two letters were detected, results are labelled as suggestions — crop more letters for a firmer answer.',
+			},
+			{
+				q: 'Why do I sometimes get paid fonts in my results?',
+				a: 'The font you’re looking for is often commercial. When we detect one, we show it alongside a recommended free alternative that looks very similar, so you’re never stuck. Browse all pairings via the <a class="text-link" href="/tools/free-font-alternative-finder">free font alternative finder</a>.',
+			},
+			{
+				q: 'What is a “free alternative”?',
+				a: 'A free, open-source typeface that closely resembles a commercial font. Every paid font in our catalog has one. For example, Inter is the go-to free alternative to Helvetica.',
+			},
+			{
+				q: 'Can I use the fonts I find commercially?',
+				a: 'Google Fonts families are open source and free for any use, including commercial projects. Paid fonts require a license from the foundry — follow the buy link for pricing.',
+			},
+			{
+				q: 'Which image formats and sizes work best?',
+				a: 'PNG, JPG and WebP up to 700 KB. A clean, high-resolution, level screenshot of the text gives the best results. Photographs of curved or heavily styled text are harder to match — the <a class="text-link" href="/guides/identify-font-from-image">identification guide</a> walks through preparing a good crop.',
+			},
+		],
+	},
+];
+
+const allFaqs = faqSections.flatMap((s) => s.faqs);
+
+const jsonLd = JSON.stringify({
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: allFaqs.map((f) => ({
+		'@type': 'Question',
+		name: f.q,
+		acceptedAnswer: {
+			'@type': 'Answer',
+			text: f.a.replace(/<[^>]+>/g, ''),
+		},
+	})),
+});
+---
+
+<Layout
+	path="/faq"
+	title="Font Finder FAQ — How to Identify a Font From an Image"
+	description="Font finder FAQs: identify a font by image, use the free AI font finder, match fonts, find free fonts, use Google Fonts, and identify fonts in PDFs."
+	canonical="/faq"
+>
+	<script is:inline type="application/ld+json" set:html={jsonLd} />
+
+	<section class="container-page py-12 sm:py-16">
+		<p class="eyebrow">FAQ</p>
+		<h1 class="mt-3 text-display-lg font-semibold tracking-tight">Frequently asked questions</h1>
+		<p class="mt-3 max-w-2xl text-body-lg text-body">
+			Everything about identifying a typeface from an image — and how this font finder does it.
+		</p>
+
+		{faqSections.map((section) => (
+			<div class="mt-10 max-w-3xl">
+				<h2 class="text-display-sm font-semibold tracking-tight">{section.title}</h2>
+				<div class="mt-4 space-y-3">
+					{section.faqs.map((item) => (
+						<details class="faq-item">
+							<summary class="faq-q">{item.q}</summary>
+							<p class="faq-a" set:html={item.a} />
+						</details>
+					))}
+				</div>
+			</div>
+		))}
+
+		<p class="mt-10 max-w-3xl text-body-md text-body">
+			Still stuck? <a class="text-link hover:underline" href="/contact">Get in touch</a> and we’ll help.
+			For deeper reading, try the <a class="text-link hover:underline" href="/guides">typography guides</a>.
+		</p>
+	</section>
+</Layout>

@@ -1,0 +1,50 @@
+---
+import Layout from '../../components/Layout.astro';
+import Matcher from '../../components/Matcher.astro';
+---
+
+<Layout
+	path="/tools/logo-font-identifier"
+	title="Logo Font Identifier — Find the Font Used in a Logo"
+	description="Identify the typeface behind a logo or wordmark. Free logo font identifier that names the font — and suggests free alternatives when the original is custom or commercial."
+	canonical="/tools/logo-font-identifier"
+>
+	<section class="container-page py-12 sm:py-16">
+		<p class="eyebrow">Tools</p>
+		<h1 class="mt-3 max-w-3xl text-display-lg font-semibold tracking-tight">
+			Logo font identifier
+		</h1>
+		<p class="mt-3 max-w-2xl text-body-lg text-body">
+			Crop a wordmark down to its letters and this tool names the closest typeface — with a free
+			lookalike whenever the original was drawn or licensed commercially.
+		</p>
+
+		<div class="mx-auto mt-8 max-w-3xl text-left">
+			<Matcher />
+		</div>
+	</section>
+
+	<section class="container-page pb-16 sm:pb-24">
+		<div class="max-w-3xl">
+			<h2 class="text-display-md font-semibold tracking-tight">How to identify a logo font</h2>
+			<ol class="mt-4 list-decimal space-y-2 pl-6 text-body-md text-body">
+				<li>Find the highest-resolution version of the logo you can — an SVG export or press kit beats a screenshot.</li>
+				<li>Crop to just the lettering, excluding icons, taglines and registered marks.</li>
+				<li>Fix any misread letters in the editor before matching.</li>
+			</ol>
+
+			<h2 class="mt-10 text-display-md font-semibold tracking-tight">What to expect from logo lettering</h2>
+			<ul class="mt-4 list-disc space-y-2 pl-6 text-body-md text-body">
+				<li>Many logos are <strong>drawn artwork, not typeset text</strong> — expect a close relative rather than an exact name, which is still enough to recreate the look.</li>
+				<li>All-caps wordmarks carry less identifying detail than lowercase; results lean toward “similar” rather than “strong”.</li>
+				<li>If the match is a commercial face like Helvetica or Gotham, every result includes a free alternative such as Inter or Montserrat.</li>
+				<li>Straight-on, unrotated crops always beat perspective shots of signage.</li>
+			</ul>
+
+			<p class="mt-8 text-body-md text-body">
+				Once identified, open any match’s detail page for a specimen, download link and copy-paste
+				CSS. Your image stays on your device — matching runs entirely in your browser.
+			</p>
+		</div>
+	</section>
+</Layout>

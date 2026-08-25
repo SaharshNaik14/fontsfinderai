@@ -1,0 +1,57 @@
+---
+import Layout from '../components/Layout.astro';
+import { SITE } from '../lib/site';
+---
+
+<Layout
+	path="/about"
+	title="About"
+	description={`About ${SITE.name}: a free, unlimited, no-account font identifier that matches fonts from images using AI and browser-side comparison.`}
+	canonical="/about"
+>
+	<section class="container-page py-12 sm:py-16">
+		<div class="container-prose">
+			<p class="eyebrow">About</p>
+			<h1 class="mt-3 text-display-lg font-semibold tracking-tight">Naming fonts should be free</h1>
+			<div class="prose mt-6">
+				<p>
+					Fonts Finder AI started with a small, frustrating problem: we kept seeing typefaces we loved
+					and had no quick way to name them. Existing tools charged per identification, hid results
+					behind accounts, or ignored commercial fonts entirely.
+				</p>
+				<p>
+					So we built the tool we wanted. Upload an image, and an AI vision model reads the text while
+					your browser compares letterforms against 1,800+ free fonts and hundreds of commercial ones.
+					Results come back ranked, in seconds, for free.
+				</p>
+				<p>
+					We believe a font identification tool should be like the fonts themselves: freely available,
+					beautifully crafted, and open to everyone. No accounts. No credits. No dark patterns.
+				</p>
+				<p>
+					When we do find a commercial font, we pair it with a free alternative that looks remarkably
+					close — because the answer “you need to buy a $60 license” is never the only answer.
+				</p>
+			</div>
+
+			<div class="mt-10 grid gap-6 sm:grid-cols-3">
+				<div class="rounded-lg border border-hairline bg-canvas-soft p-6 text-center">
+					<p class="text-display-md font-semibold">1,800+</p>
+					<p class="text-body-sm text-mute">free fonts in our database</p>
+				</div>
+				<div class="rounded-lg border border-hairline bg-canvas-soft p-6 text-center">
+					<p class="text-display-md font-semibold">300+</p>
+					<p class="text-body-sm text-mute">commercial typefaces covered</p>
+				</div>
+				<div class="rounded-lg border border-hairline bg-canvas-soft p-6 text-center">
+					<p class="text-display-md font-semibold">$0</p>
+					<p class="text-body-sm text-mute">always — it’s free forever</p>
+				</div>
+			</div>
+
+			<p class="mt-10 text-body-md text-body">
+				Questions or feedback? <a class="text-link hover:underline" href="/contact">Contact us</a>.
+			</p>
+		</div>
+	</section>
+</Layout>

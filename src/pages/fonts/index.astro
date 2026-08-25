@@ -1,0 +1,126 @@
+---
+import Layout from '../../components/Layout.astro';
+import { googleFonts, featuredFonts } from '../../lib/catalog';
+import type { FontCategory } from '../../lib/types';
+
+const params = new URL(Astro.url);
+const category = (params.searchParams.get('category') ?? '') as FontCategory | '';
+const q = (params.searchParams.get('q') ?? '').trim().toLowerCase();
+const page = Math.max(1, Number.parseInt(params.searchParams.get('page') ?? '1', 10) || 1);
+const perPage = 48;
+
+let list = googleFonts;
+if (category) list = list.filter((f) => f.category === category);
+if (q) list = list.filter((f) => f.family.toLowerCase().includes(q) || f.designer.toLowerCase().includes(q));
+
+const total = list.length;
+const totalPages = Math.max(1, Math.ceil(total / perPage));
+const safePage = Math.min(page, totalPages);
+const pageList = list.slice((safePage - 1) * perPage, safePage * perPage);
+
+const baseQuery = (overrides: Record<string, string>) => {
+	const search = new URLSearchParams();
+	if (category) search.set('category', category);
+	if (q) search.set('q', q);
+	for (const [k, v] of Object.entries(overrides)) {
+		if (v) search.set(k, v);
+		else search.delete(k);
+	}
+	const s = search.toString();
+	return s ? `/fonts?${s}` : '/fonts';
+};
+
+const featuredCount = featuredFonts.length;
+const catCount = (c: FontCategory) => googleFonts.filter((f) => f.category === c).length;
+---
+
+<Layout
+	path="/fonts"
+	title="Browse free fonts"
+	description={`Browse ${googleFonts.length} free Google Fonts with previews, categories and details — every typeface is free to download and use.`}
+	canonical="/fonts"
+>
+	<section class="container-page py-12 sm:py-16">
+		<p class="eyebrow">Font catalog</p>
+		<h1 class="mt-3 text-display-lg font-semibold tracking-tight">Free fonts, ready to use</h1>
+		<p class="mt-3 max-w-2xl text-body-lg text-body">
+			All {googleFonts.length} families below are free to download from Google Fonts and are part of our
+			matching database. Filter by category or search by name and designer.
+		</p>
+
+		<div class="mt-8 flex flex-wrap items-center gap-2">
+			<a href="/fonts" class:list={['filter-chip', !category && 'is-active']}>
+				All <span class="text-mute">{googleFonts.length}</span>
+			</a>
+			<a href="/fonts?category=sans-serif" class:list={['filter-chip', category === 'sans-serif' && 'is-active']}>
+				Sans-serif <span class="text-mute">{catCount('sans-serif')}</span>
+			</a>
+			<a href="/fonts?category=serif" class:list={['filter-chip', category === 'serif' && 'is-active']}>
+				Serif <span class="text-mute">{catCount('serif')}</span>
+			</a>
+			<a href="/fonts?category=display" class:list={['filter-chip', category === 'display' && 'is-active']}>
+				Display <span class="text-mute">{catCount('display')}</span>
+			</a>
+			<a href="/fonts?category=handwriting" class:list={['filter-chip', category === 'handwriting' && 'is-active']}>
+				Handwriting <span class="text-mute">{catCount('handwriting')}</span>
+			</a>
+			<a href="/fonts?category=monospace" class:list={['filter-chip', category === 'monospace' && 'is-active']}>
+				Monospace <span class="text-mute">{catCount('monospace')}</span>
+			</a>
+		</div>
+
+		<form method="get" action="/fonts" class="mt-5 flex max-w-md gap-2">
+			{category && <input type="hidden" name="category" value={category} />}
+			<input
+				type="search"
+				name="q"
+				value={q}
+				placeholder="Search by name or designer…"
+				class="w-full rounded-md border border-hairline bg-canvas px-3 py-2 text-body-md text-ink placeholder:text-mute focus:border-hairline-strong focus:outline-none"
+			/>
+			<button type="submit" class="btn btn-primary">Search</button>
+		</form>
+
+		<p class="mt-6 text-body-sm text-mute">
+			{total.toLocaleString()} fonts{category ? ` in ${category}` : ''}{q ? ` matching “${q}”` : ''} ·
+			{featuredCount} featured
+		</p>
+
+		<ul class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+			{pageList.map((font) => (
+				<li>
+					<a href={`/fonts/${font.id}`} class="font-card">
+						<div class="flex items-start justify-between gap-2">
+							<h3 class="font-card-name">{font.family}</h3>
+							{font.featured && <span class="featured-badge">Featured</span>}
+						</div>
+						<p class="font-card-sample" style={`font-family: "${font.family}", sans-serif`}>
+							The quick brown fox
+						</p>
+						<div class="flex items-center justify-between gap-2">
+							<span class="font-card-meta">{font.category}</span>
+							<span class="font-card-meta">
+								{font.variable ? 'Variable' : font.weight.split(' ').length > 1 ? 'Multi-weight' : font.weight}
+							</span>
+						</div>
+						<p class="font-card-designer">{font.designer || 'Various designers'}</p>
+					</a>
+				</li>
+			))}
+		</ul>
+
+		{totalPages > 1 && (
+			<nav class="mt-10 flex items-center justify-center gap-2" aria-label="Pagination">
+				{safePage > 1 && (
+					<a href={baseQuery({ page: String(safePage - 1) })} class="btn btn-ghost btn-sm">← Previous</a>
+				)}
+				<span class="text-caption text-mute">
+					Page {safePage} of {totalPages}
+				</span>
+				{safePage < totalPages && (
+					<a href={baseQuery({ page: String(safePage + 1) })} class="btn btn-ghost btn-sm">Next →</a>
+				)}
+			</nav>
+		)}
+	</section>
+</Layout>

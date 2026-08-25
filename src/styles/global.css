@@ -1,0 +1,342 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Geist", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --color-ink: #171717;
+  --color-primary: #171717;
+  --color-on-primary: #ffffff;
+  --color-canvas: #ffffff;
+  --color-canvas-soft: #fafafa;
+  --color-canvas-soft-2: #f5f5f5;
+  --color-hairline: #ebebeb;
+  --color-hairline-strong: #a1a1a1;
+  --color-body: #4d4d4d;
+  --color-mute: #888888;
+  --color-link: #0070f3;
+  --color-link-deep: #0761d1;
+  --color-error: #ee0000;
+  --color-error-soft: #f7d4d6;
+  --color-error-deep: #c50000;
+  --color-warning: #f5a623;
+  --color-warning-soft: #ffefcf;
+  --color-violet: #7928ca;
+  --color-cyan: #50e3c2;
+  --color-highlight: #ff0080;
+  --color-grad-develop-start: #007cf0;
+  --color-grad-develop-end: #00dfd8;
+  --color-grad-preview-start: #7928ca;
+  --color-grad-preview-end: #ff0080;
+  --color-grad-ship-start: #ff4d4d;
+  --color-grad-ship-end: #f9cb28;
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 100px;
+
+  --shadow-level-1: 0 1px 1px rgb(0 0 0 / 0.04);
+  --shadow-level-2: 0 1px 1px rgb(0 0 0 / 0.05), 0 2px 2px rgb(0 0 0 / 0.05);
+  --shadow-level-3: 0 2px 2px rgb(0 0 0 / 0.06), 0 8px 8px -8px rgb(0 0 0 / 0.06);
+  --shadow-level-4: 0 2px 2px rgb(0 0 0 / 0.06), 0 8px 16px -4px rgb(0 0 0 / 0.07);
+  --shadow-level-5: 0 1px 1px rgb(0 0 0 / 0.04), 0 8px 16px -4px rgb(0 0 0 / 0.08), 0 24px 32px -8px rgb(0 0 0 / 0.12);
+
+  --text-display-xl: 3rem;
+  --text-display-xl--line-height: 1.04;
+  --text-display-xl--letter-spacing: -0.045em;
+  --text-display-lg: 2rem;
+  --text-display-lg--line-height: 1.15;
+  --text-display-lg--letter-spacing: -0.035em;
+  --text-display-md: 1.5rem;
+  --text-display-md--line-height: 1.2;
+  --text-display-md--letter-spacing: -0.03em;
+  --text-display-sm: 1.25rem;
+  --text-display-sm--line-height: 1.3;
+  --text-display-sm--letter-spacing: -0.02em;
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.55;
+  --text-body-md: 1rem;
+  --text-body-md--line-height: 1.5;
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.45;
+  --text-body-sm--letter-spacing: -0.01em;
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1.4;
+  --text-code: 0.8125rem;
+  --text-code--line-height: 1.5;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-canvas text-ink antialiased;
+    font-feature-settings: "ss01", "ss02";
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-prose {
+    @apply mx-auto w-full max-w-2xl px-4 sm:px-6;
+  }
+
+  .prose {
+    @apply text-body-md leading-relaxed text-body;
+  }
+
+  .prose h2 {
+    @apply mt-10 text-display-sm font-semibold tracking-tight text-ink;
+  }
+
+  .prose h3 {
+    @apply mt-8 text-body-lg font-semibold tracking-tight text-ink;
+  }
+
+  .prose p {
+    @apply mt-4;
+  }
+
+  .prose a {
+    @apply text-link underline underline-offset-2 hover:text-ink;
+  }
+
+  .prose ul {
+    @apply mt-4 list-disc space-y-1 pl-5;
+  }
+
+  .prose li {
+    @apply text-body-md;
+  }
+
+  .prose strong {
+    @apply font-semibold text-ink;
+  }
+
+  .eyebrow {
+    @apply font-mono text-caption uppercase tracking-[0.16em] text-mute;
+  }
+
+  .gradient-text {
+    background-image: linear-gradient(
+      120deg,
+      var(--color-grad-develop-start),
+      var(--color-grad-preview-start) 45%,
+      var(--color-grad-preview-end) 80%,
+      var(--color-grad-ship-start)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .gradient-border {
+    position: relative;
+    background:
+      linear-gradient(var(--color-canvas), var(--color-canvas)) padding-box,
+      linear-gradient(
+          135deg,
+          var(--color-grad-develop-start),
+          var(--color-grad-preview-start) 40%,
+          var(--color-grad-preview-end) 75%,
+          var(--color-grad-ship-start)
+        )
+        border-box;
+    border: 1px solid transparent;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-transparent px-4 py-2 text-body-sm font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-on-primary hover:opacity-90;
+  }
+
+  .btn-ghost {
+    @apply border-hairline bg-canvas text-ink hover:border-hairline-strong;
+  }
+
+  .btn-sm {
+    @apply px-3 py-1.5 text-caption;
+  }
+
+  .ai-chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-hairline bg-canvas-soft px-3 py-1 text-caption;
+  }
+
+  .ai-chip-label {
+    @apply font-mono uppercase tracking-wider text-mute;
+  }
+
+  .result-card {
+    @apply flex flex-col gap-3 rounded-lg border border-hairline bg-canvas p-4 shadow-level-1;
+  }
+
+  .result-card-paid {
+    @apply bg-canvas-soft;
+  }
+
+  .result-head {
+    @apply flex items-start justify-between gap-3;
+  }
+
+  .result-title {
+    @apply min-w-0;
+  }
+
+  .result-name {
+    @apply text-body-md font-semibold tracking-tight text-ink;
+  }
+
+  .result-meta {
+    @apply flex shrink-0 items-center gap-2 text-caption text-mute;
+  }
+
+  .result-sample {
+    @apply truncate py-4 text-2xl text-ink;
+  }
+
+  .result-actions {
+    @apply flex items-center gap-2;
+  }
+
+  .result-facts {
+    @apply text-caption text-mute;
+  }
+
+  .result-alt {
+    @apply text-caption text-body;
+  }
+
+  .confidence {
+    @apply font-mono text-caption text-mute;
+  }
+
+  .category-tag {
+    @apply rounded-full border border-hairline px-2 py-0.5 text-caption capitalize text-body;
+  }
+
+  .filter-chip {
+    @apply inline-flex items-center gap-1 rounded-full border border-hairline bg-canvas px-3 py-1.5 text-body-sm text-body transition-colors hover:text-ink;
+  }
+
+  .filter-chip.is-active {
+    @apply border-primary bg-primary text-on-primary;
+  }
+
+  .filter-chip.is-active .text-mute {
+    color: var(--color-on-primary);
+    opacity: 0.7;
+  }
+
+  .featured-badge {
+    @apply rounded-full bg-canvas-soft px-2 py-0.5 text-caption font-medium text-body;
+  }
+
+  .font-card {
+    @apply flex h-full flex-col gap-3 rounded-lg border border-hairline bg-canvas p-5 shadow-level-1 transition-shadow hover:shadow-level-3;
+  }
+
+  .font-card-name {
+    @apply text-body-md font-semibold tracking-tight;
+  }
+
+  .font-card-sample {
+    @apply truncate py-3 text-xl text-ink;
+  }
+
+  .font-card-meta {
+    @apply text-caption text-mute capitalize;
+  }
+
+  .font-card-designer {
+    @apply mt-1 truncate text-caption text-mute;
+  }
+
+  .preview-panel {
+    @apply rounded-lg border border-hairline bg-canvas p-6 text-2xl leading-snug text-ink shadow-level-1 sm:p-8 sm:text-3xl;
+  }
+
+  .preview-panel-2 {
+    @apply mt-3 border-dashed text-xl text-body;
+  }
+
+  .guide-card {
+    @apply mt-10 rounded-lg border border-hairline bg-canvas p-6 shadow-level-1 sm:p-8;
+  }
+
+  .code-block {
+    @apply overflow-x-auto rounded-md bg-canvas-soft p-3 font-mono text-code text-ink;
+  }
+
+  .faq-item {
+    @apply rounded-lg border border-hairline bg-canvas shadow-level-1;
+  }
+
+  .faq-q {
+    @apply cursor-pointer list-none px-5 py-4 text-body-md font-medium text-ink;
+  }
+
+  .faq-q::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-q::after {
+    content: "+";
+    float: right;
+    color: var(--color-mute);
+  }
+
+  .faq-item[open] .faq-q::after {
+    content: "−";
+  }
+
+  .faq-a {
+    @apply border-t border-hairline px-5 py-4 text-body-md text-body;
+  }
+}
+
+.dark {
+  --color-ink: #ededed;
+  --color-canvas: #0a0a0a;
+  --color-canvas-soft: #121212;
+  --color-canvas-soft-2: #1a1a1a;
+  --color-hairline: #242424;
+  --color-hairline-strong: #4a4a4a;
+  --color-body: #a8a8a8;
+  --color-mute: #7a7a7a;
+
+  .gradient-border {
+    background:
+      linear-gradient(var(--color-canvas), var(--color-canvas)) padding-box,
+      linear-gradient(
+          135deg,
+          var(--color-grad-develop-start),
+          var(--color-grad-preview-start) 40%,
+          var(--color-grad-preview-end) 75%,
+          var(--color-grad-ship-start)
+        )
+        border-box;
+    border: 1px solid transparent;
+  }
+}

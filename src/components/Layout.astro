@@ -1,0 +1,105 @@
+---
+import { SITE } from '../lib/site';
+import '../styles/global.css';
+import Nav from './Nav.astro';
+import Footer from './Footer.astro';
+
+interface Props {
+	title?: string;
+	description?: string;
+	canonical?: string;
+	ogImage?: string;
+	noindex?: boolean;
+	path?: string;
+}
+
+const {
+	title = `${SITE.name} — ${SITE.tagline}`,
+	description = SITE.description,
+	canonical = '/',
+	ogImage = '/og.png',
+	noindex = false,
+	path = '/',
+} = Astro.props;
+
+const fullUrl = `${SITE.url}${canonical}`;
+const fullOg = `${SITE.url}${ogImage}`;
+const pageTitle = canonical === '/' ? title : `${title} — ${SITE.name}`;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{pageTitle}</title>
+		<meta name="description" content={description} />
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-title" content="fontsfinder" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="sitemap" href="/sitemap.xml" />
+		<link rel="canonical" href={fullUrl} />
+		{noindex && <meta name="robots" content="noindex" />}
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content={SITE.name} />
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={fullUrl} />
+		<meta property="og:image" content={fullOg} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content={`${SITE.name} — identify any font from an image`} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={pageTitle} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={fullOg} />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script is:inline>
+			(() => {
+				try {
+					const stored = localStorage.getItem('ff-theme');
+					const dark = stored
+						? stored === 'dark'
+						: window.matchMedia('(prefers-color-scheme: dark)').matches;
+					document.documentElement.classList.toggle('dark', dark);
+				} catch {
+					// keep default theme
+				}
+			})();
+		</script>
+
+		{SITE.adsenseClient && (
+			<script
+				is:inline
+				async
+				src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${SITE.adsenseClient}`}
+				crossorigin="anonymous"
+			></script>
+		)}
+		{SITE.gaId && (
+			<>
+				<script is:inline>
+					{`(function(){var id=${JSON.stringify(SITE.gaId)};var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+id;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config',id);})();`}
+				</script>
+			</>
+		)}
+	</head>
+	<body>
+		<Nav path={path} />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

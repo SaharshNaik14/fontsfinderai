@@ -1,0 +1,331 @@
+---
+import Layout from '../components/Layout.astro';
+import MeshGradient from '../components/MeshGradient.astro';
+import Matcher from '../components/Matcher.astro';
+import { SITE } from '../lib/site';
+
+const steps = [
+	{
+		n: '01',
+		title: 'Upload an image',
+		body: 'Drag in a screenshot, logo or photo that shows the typeface you want. No account, no sign-up — ever.',
+	},
+	{
+		n: '02',
+		title: 'AI narrows it down',
+		body: 'A vision model reads the text in your image and suggests likely candidates and a category.',
+	},
+	{
+		n: '03',
+		title: 'Pick your match',
+		body: 'We compare thousands of fonts in your browser and rank them. Filter to free ones and start using them today.',
+	},
+];
+
+const features = [
+	{
+		title: 'Free, unlimited',
+		body: 'Identify as many fonts as you like. No credits, no paywall, no account.',
+	},
+	{
+		title: 'Free alternatives',
+		body: 'Every paid font we find comes with a free lookalike you can actually use.',
+	},
+	{
+		title: 'Privacy by design',
+		body: 'Your image is processed and discarded on the spot. We never store uploads.',
+	},
+	{
+		title: 'Instant preview',
+		body: 'Type your own text and see it rendered in every candidate font, live.',
+	},
+];
+
+const jsonLd = JSON.stringify({
+	'@context': 'https://schema.org',
+	'@graph': [
+		{
+			'@type': 'WebSite',
+			name: SITE.name,
+			alternateName: 'Font Finder',
+			url: SITE.url,
+			description: SITE.description,
+			publisher: { '@id': `${SITE.url}/#organization` },
+		},
+		{
+			'@type': 'HowTo',
+			name: 'How to find a font from an image',
+			description:
+				'Identify the typeface used in a screenshot, logo or photo, and get a free alternative you can actually use.',
+			totalTime: 'PT1M',
+			estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' },
+			step: [
+				{
+					'@type': 'HowToStep',
+					name: 'Upload or paste an image',
+					text: 'Drop a screenshot, photo or logo onto the font finder, or paste one from your clipboard.',
+				},
+				{
+					'@type': 'HowToStep',
+					name: 'Crop to the text',
+					text: 'Drag to select just the words you want identified. A tight crop does more for accuracy than anything else.',
+				},
+				{
+					'@type': 'HowToStep',
+					name: 'Read the ranked matches',
+					text: 'Your browser compares the letter shapes against every font in the library and ranks them, with free alternatives for paid typefaces.',
+				},
+			],
+		},
+		{
+			'@type': 'WebApplication',
+			name: SITE.name,
+			url: SITE.url,
+			applicationCategory: 'DesignApplication',
+			operatingSystem: 'Any',
+			browserRequirements: 'Requires a modern browser with JavaScript enabled',
+			description: SITE.description,
+			offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+			featureList: [
+				'Font finder by image — upload, drag or paste a screenshot',
+				'Automatic letter detection with per-letter correction',
+				'Rendered word comparison against every free Google Font',
+				'Free alternatives to commercial typefaces',
+				'Copy-paste CSS for every match',
+			],
+		},
+		{
+			'@type': 'Organization',
+			'@id': `${SITE.url}/#organization`,
+			name: SITE.name,
+			url: SITE.url,
+			logo: `${SITE.url}/favicon.svg`,
+			description:
+				'A free font finder that identifies typefaces from images and suggests free alternatives you can use commercially.',
+		},
+	],
+});
+---
+
+<Layout
+	path="/"
+	title="Font Finder — Identify Any Font From an Image"
+	description="Free font finder by image — upload a picture and our AI font finder names the typeface, finds similar fonts and shows free alternatives. No account needed."
+>
+	<script is:inline type="application/ld+json" set:html={jsonLd} />
+
+	<section class="relative overflow-hidden">
+		<MeshGradient />
+		<div class="container-page relative py-16 text-center sm:py-24">
+			<p class="eyebrow mx-auto">Free font finder by image — no account needed</p>
+			<h1 class="mx-auto mt-4 max-w-3xl text-display-xl font-semibold tracking-tight">
+				Font Finder — <span class="gradient-text">identify any font</span> from an image
+			</h1>
+			<p class="mx-auto mt-5 max-w-2xl text-body-lg text-body">
+				{SITE.description}
+			</p>
+			<div class="mx-auto mt-8 max-w-3xl text-left">
+				<Matcher />
+			</div>
+			<div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+				<a href="#matcher" class="btn btn-primary">Try it now — it's free</a>
+				<a href="/fonts" class="btn btn-ghost">Browse the font catalog</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="border-t border-hairline bg-canvas-soft">
+		<div class="container-page py-16 sm:py-24">
+			<p class="eyebrow">How it works</p>
+			<h2 class="mt-3 max-w-2xl text-display-lg font-semibold tracking-tight">
+				From screenshot to typeface in seconds
+			</h2>
+			<div class="mt-10 grid gap-6 md:grid-cols-3">
+				{steps.map((step) => (
+					<article class="rounded-lg border border-hairline bg-canvas p-6 shadow-level-1">
+						<span class="gradient-text font-mono text-display-sm font-semibold">{step.n}</span>
+						<h3 class="mt-3 text-display-sm font-semibold tracking-tight">{step.title}</h3>
+						<p class="mt-2 text-body-md text-body">{step.body}</p>
+					</article>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="container-page py-16 sm:py-24">
+		<div class="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">
+			<div>
+				<p class="eyebrow">Thousands of fonts</p>
+				<h2 class="mt-3 text-display-lg font-semibold tracking-tight">
+					Free fonts, paid fonts, and a free version of both
+				</h2>
+				<p class="mt-4 text-body-lg text-body">
+					We search 1,800+ Google Fonts and hundreds of commercial typefaces. Every paid result
+					links to a free alternative that looks remarkably close.
+				</p>
+				<ul class="mt-6 space-y-3">
+					<li class="flex items-center gap-3 text-body-md">
+						<span class="grid size-6 shrink-0 place-items-center rounded-full bg-primary text-caption font-semibold text-on-primary">✓</span>
+						Free fonts you can download and use immediately
+					</li>
+					<li class="flex items-center gap-3 text-body-md">
+						<span class="grid size-6 shrink-0 place-items-center rounded-full bg-primary text-caption font-semibold text-on-primary">✓</span>
+						Commercial fonts with links to the foundry
+					</li>
+					<li class="flex items-center gap-3 text-body-md">
+						<span class="grid size-6 shrink-0 place-items-center rounded-full bg-primary text-caption font-semibold text-on-primary">✓</span>
+						Free lookalikes for every commercial match
+					</li>
+				</ul>
+			</div>
+			<div class="grid grid-cols-2 gap-4">
+				<div class="gradient-border rounded-lg p-5">
+					<p class="eyebrow">Free</p>
+					<div class="mt-2 truncate text-2xl" style="font-family: Inter, sans-serif;">Inter</div>
+					<div class="mt-1 truncate text-2xl" style="font-family: 'Playfair Display', serif;">Playfair</div>
+					<div class="mt-1 truncate text-2xl" style="font-family: 'JetBrains Mono', monospace;">JetBrains</div>
+				</div>
+				<div class="rounded-lg border border-hairline bg-canvas-soft p-5">
+					<p class="eyebrow">Paid</p>
+					<div class="mt-2 truncate text-2xl" style="font-family: 'Arial', sans-serif;">Helvetica</div>
+					<div class="mt-1 truncate text-2xl" style="font-family: Georgia, serif;">Garamond</div>
+					<div class="mt-1 truncate text-2xl" style="font-family: 'Courier New', monospace;">Courier</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="border-t border-hairline bg-canvas-soft">
+		<div class="container-page py-16 sm:py-24">
+			<p class="eyebrow">Why {SITE.name}</p>
+			<h2 class="mt-3 max-w-2xl text-display-lg font-semibold tracking-tight">
+				Built for designers who hate busywork
+			</h2>
+			<div class="mt-10 grid gap-6 sm:grid-cols-2">
+				{features.map((feature) => (
+					<article class="rounded-lg border border-hairline bg-canvas p-6 shadow-level-1">
+						<h3 class="text-display-sm font-semibold tracking-tight">{feature.title}</h3>
+						<p class="mt-2 text-body-md text-body">{feature.body}</p>
+					</article>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="border-t border-hairline bg-canvas-soft">
+		<div class="container-prose py-16 sm:py-24">
+			<p class="eyebrow">About the tool</p>
+			<h2 class="mt-3 text-display-lg font-semibold tracking-tight">
+				The Font Finder: a free tool to name any typeface
+			</h2>
+			<div class="prose">
+				<p>
+					Ever come across a font you love and had no idea what it's called? That is exactly the
+					problem our <strong>font finder</strong> solves. Fonts Finder AI is a{' '}
+					<strong>free font finder</strong> built for designers, marketers, students and hobbyists:
+					you upload a picture of the text and the tool names the typeface — and usually a lot more.
+					Whether you're matching a logo, recreating a poster, or simply curious what a billboard
+					uses, this <strong>image font finder</strong> turns a frustrating guessing game into a
+					ten-second answer.
+				</p>
+
+				<h3>How the font finder by image works</h3>
+				<p>
+					It starts with a simple <strong>font finder by image</strong> workflow. Drag a screenshot, a
+					photo of a sign, or a logo into the matcher above — a <strong>font finder upload image</strong>{' '}
+					box that accepts PNG, JPEG and WebP. A computer-vision model reads the letters, guesses the
+					category, and suggests the most likely families. We then compare the shapes in your picture
+					against more than 2,000 typefaces and rank every candidate, so the first result is the
+					strongest match, not a random guess.
+				</p>
+
+				<h3>A free font finder with no limits</h3>
+				<p>
+					Most online services charge per lookup or hide the best results behind a subscription. This{' '}
+					<strong>font finder is free</strong> — genuinely free, with no credits, no sign-up and no
+					daily caps. Our <strong>free font finder</strong> is built for people who hunt typefaces
+					constantly: identify as many fonts as you like, as often as you like. It's a{' '}
+					<strong>font finder from image free</strong> of charge and a <strong>font finder free</strong> of
+					limits, which makes it a practical daily companion for anyone who works with visual design.
+				</p>
+
+				<h3>The AI font finder behind the answer</h3>
+				<p>
+					At the heart of the tool is an <strong>AI font finder</strong> that reads text the way a
+					designer does. Instead of a blunt pixel compare, it examines the anatomy of each glyph —
+					stroke weight, contrast, terminal shapes and proportions — and matches those against every
+					family in the catalog. Combine that with a <strong>font finder by text</strong> step that
+					transcribes the characters, and the same upload becomes both an image match and a text
+					match. If you've ever asked “what the font is this?” in a group chat, this{' '}
+					<strong>what-the-font finder</strong> gives you the answer before anyone else can reply.
+				</p>
+
+				<h3>Also a similar fonts finder</h3>
+				<p>
+					Knowing the name is only half the battle. Most people need alternatives — a version they can
+					legally use, or a lookalike with a friendlier license. That's why this tool doubles as a{' '}
+					<strong>similar fonts finder</strong>. When the exact match is a commercial typeface, we list
+					similar fonts that are open source and free to use, so you get the look without the license
+					bill. Paid hits still include a direct link to the foundry if you prefer the original. Our{' '}
+					<strong>fonts finder AI</strong> engine keeps free and paid results clearly separated, with a
+					one-tap filter for free fonts only.
+				</p>
+
+				<h3>And a Google font finder</h3>
+				<p>
+					Free results come from the Google Fonts library, which is why the same tool also works as a{' '}
+					<strong>Google font finder</strong>. Browse the full catalog on the{' '}
+					<a href="/fonts">fonts page</a>, filter by category, or search by name the moment you know
+					what you're after. Pair it with our <a href="/tools">free tools</a> and{' '}
+					<a href="/guides">typography guides</a>, and you have a complete font workflow in one place.
+				</p>
+
+				<h3>From picture to production</h3>
+				<p>
+					A <strong>fonts finder from picture</strong> is only useful if the answer is usable. After you
+					get a match, type your own text and preview it live in every candidate, copy the embed code,
+					and grab a free alternative that's ready for commercial projects. The tool doesn't just name
+					the font — it helps you ship the design. Whether it's a brand refresh, a client deliverable
+					or a personal project, the workflow is the same: identify, preview, compare, export. That's
+					why this remains a <strong>fonts finder</strong>{' '}
+					you can rely on, whatever the project.
+				</p>
+
+				<h3>What you can use it for</h3>
+				<p>
+					The use cases are endless: marketing teams match the fonts behind competitor ads, developers
+					find the exact family from a design mockup, and students identify typefaces for assignments.
+					Bloggers recreate the look of a favorite newsletter, while designers use the similar fonts
+					finder to track down affordable alternatives to pricey originals. Whatever brought you here,
+					the answer starts with one upload — and it stays free. No uploads are stored, nothing is kept
+					after the match, and there's nothing to install — the whole font finder runs right in your
+					browser tab.
+				</p>
+
+				<h3>Tips for the best match</h3>
+				<ul>
+					<li>Crop the image tightly around the text — less clutter means a clearer read.</li>
+					<li>Use a high-contrast image; dark text on a light background works best.</li>
+					<li>Avoid heavy filters, outlines and extreme italic slants when you can.</li>
+					<li>For logos, a straight-on, front-facing shot gives the most accurate result.</li>
+				</ul>
+
+				<p>
+					Try it now — the matcher above is the same tool people use every day to build brands, edit
+					videos and design interfaces. Upload an image, get a ranked answer, and walk away with a font
+					you can actually use, for free.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-page py-16 sm:py-24">
+		<div class="gradient-border rounded-xl p-8 text-center sm:p-12">
+			<h2 class="text-display-lg font-semibold tracking-tight">Ready to name that font?</h2>
+			<p class="mx-auto mt-3 max-w-xl text-body-lg text-body">
+				It takes about ten seconds and it's completely free.
+			</p>
+			<a href="#matcher" class="btn btn-primary mt-6">Identify a font now</a>
+		</div>
+	</section>
+</Layout>

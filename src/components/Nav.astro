@@ -1,0 +1,79 @@
+---
+import Logo from './Logo.astro';
+
+interface Props {
+	path?: string;
+}
+
+const { path = '/' } = Astro.props;
+
+const links = [
+	{ href: '/', label: 'Font Finder' },
+	{ href: '/fonts', label: 'Fonts' },
+	{ href: '/tools', label: 'Tools' },
+	{ href: '/guides', label: 'Guides' },
+	{ href: '/faq', label: 'FAQ' },
+];
+
+const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
+---
+
+<header class="sticky top-0 z-40 border-b border-hairline bg-canvas/85 backdrop-blur">
+	<nav class="container-page flex h-14 items-center justify-between gap-4" aria-label="Main">
+		<Logo />
+
+		<ul class="hidden items-center gap-1 md:flex">
+			{links.map((link) => (
+				<li>
+					<a
+						href={link.href}
+						class:list={[
+							'rounded-md px-3 py-1.5 text-body-sm font-medium transition-colors',
+							isActive(link.href) ? 'text-ink' : 'text-mute hover:text-ink',
+						]}
+					>
+						{link.label}
+					</a>
+				</li>
+			))}
+		</ul>
+
+		<div class="flex items-center gap-2">
+			<button
+				id="theme-toggle"
+				type="button"
+				class="grid size-8 place-items-center rounded-md border border-hairline text-mute transition-colors hover:text-ink"
+				aria-label="Toggle dark mode"
+			>
+				<svg class="theme-icon theme-icon-dark hidden" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+					<circle cx="12" cy="12" r="4"></circle>
+					<path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41"></path>
+				</svg>
+				<svg class="theme-icon theme-icon-light hidden" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+					<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+				</svg>
+			</button>
+			<a href="/#matcher" class="btn btn-primary hidden sm:inline-flex">Identify a font</a>
+		</div>
+	</nav>
+</header>
+
+<script>
+	const toggle = document.getElementById('theme-toggle');
+	toggle?.addEventListener('click', () => {
+		const root = document.documentElement;
+		const next = root.classList.contains('dark') ? 'light' : 'dark';
+		root.classList.toggle('dark', next === 'dark');
+		try {
+			localStorage.setItem('ff-theme', next);
+		} catch {
+			// ignore
+		}
+	});
+	const applyIcon = () => {
+		const dark = document.documentElement.classList.contains('dark');
+		for (const el of document.querySelectorAll('.theme-icon')) el.classList.toggle('hidden', el.classList.contains('theme-icon-dark') === dark);
+	};
+	applyIcon();
+	new MutationObserver(applyIcon).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+</script>

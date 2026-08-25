@@ -1,0 +1,74 @@
+---
+import Layout from '../components/Layout.astro';
+import { SITE } from '../lib/site';
+const updated = 'July 2026';
+---
+
+<Layout
+	path="/privacy"
+	title="Privacy policy"
+	description={`Privacy policy for ${SITE.name}. We keep no accounts, store no uploaded images, and explain exactly what data we process.`}
+	canonical="/privacy"
+>
+	<section class="container-page py-12 sm:py-16">
+		<div class="container-prose">
+			<p class="eyebrow">Legal</p>
+			<h1 class="mt-3 text-display-lg font-semibold tracking-tight">Privacy policy</h1>
+			<p class="mt-2 text-caption text-mute">Last updated: {updated}</p>
+
+			<div class="prose mt-6">
+				<p>
+					{SITE.name} (the “Site”) respects your privacy. This policy explains what happens to the
+					images and data you give us when you use the Site.
+				</p>
+				<h2>What we collect</h2>
+				<p>
+					We do not require an account and we do not store your uploaded images. When you use the font
+					finder, your image is sent to our servers only long enough to be analyzed by the AI model,
+					then discarded. It is never written to disk, logged, or retained.
+				</p>
+				<h2>Standard technical data</h2>
+				<p>
+					Like most websites we collect routine technical data — your IP address, browser type, device,
+					and the pages you visit — to keep the service running, protect it from abuse (including rate
+					limiting and bot detection), and understand aggregate usage.
+				</p>
+				<h2>Advertising</h2>
+				<p>
+					We may display advertisements served by third parties, such as Google AdSense. These providers
+					may use cookies or similar technologies to serve ads based on your prior visits. You can opt
+					out of personalized advertising via Google’s ad settings.
+				</p>
+				<h2>Analytics</h2>
+				<p>
+					If we enable Google Analytics, it collects aggregated usage data (pages visited, referral
+					sources, approximate location) so we can improve the Site. You can install the official opt-out
+					browser extension to prevent tracking.
+				</p>
+				<h2>Cookies</h2>
+				<p>
+					We use a small cookie to remember your light/dark theme preference. Advertisers and analytics
+					providers may set their own cookies as described above. You can clear or block cookies in your
+					browser settings at any time.
+				</p>
+				<h2>Children</h2>
+				<p>The Site is not directed at children under 13, and we do not knowingly collect their data.</p>
+				<h2>Your rights</h2>
+				<p>
+					Depending on where you live, you may have rights to access, correct, or delete personal data we
+					hold about you. Since we store so little, the fastest way to exercise these rights is to{' '}
+					<a href="/contact">contact us</a>.
+				</p>
+				<h2>Changes</h2>
+				<p>
+					We may update this policy from time to time. Material changes will be posted on this page.
+				</p>
+				<h2>Contact</h2>
+				<p>
+					Questions? Email{' '}
+					<a href={`mailto:hello@${SITE.domain}`}>hello@{SITE.domain}</a>.
+				</p>
+			</div>
+		</div>
+	</section>
+</Layout>

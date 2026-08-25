@@ -1,0 +1,66 @@
+---
+import Logo from './Logo.astro';
+import { SITE } from '../lib/site';
+
+const year = new Date().getFullYear();
+
+const columns = [
+	{
+		title: 'Font Finder',
+		links: [
+			{ href: '/#matcher', label: 'Identify a font' },
+			{ href: '/fonts', label: 'Browse fonts' },
+			{ href: '/tools', label: 'Free tools' },
+			{ href: '/guides', label: 'Typography guides' },
+		],
+	},
+	{
+		title: 'Company',
+		links: [
+			{ href: '/about', label: 'About' },
+			{ href: '/contact', label: 'Contact' },
+			{ href: '/faq', label: 'FAQ' },
+		],
+	},
+	{
+		title: 'Legal',
+		links: [
+			{ href: '/privacy', label: 'Privacy' },
+			{ href: '/terms', label: 'Terms' },
+		],
+	},
+];
+---
+
+<footer class="border-t border-hairline bg-canvas-soft">
+	<div class="container-page grid gap-10 py-12 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
+		<div class="max-w-xs">
+			<Logo />
+			<p class="mt-4 text-body-sm text-mute">
+				{SITE.description}
+			</p>
+		</div>
+		{columns.map((col) => (
+			<nav aria-label={col.title}>
+				<h3 class="eyebrow mb-3">{col.title}</h3>
+				<ul class="space-y-2">
+					{col.links.map((link) => (
+						<li>
+							<a href={link.href} class="text-body-sm text-body transition-colors hover:text-ink">
+								{link.label}
+							</a>
+						</li>
+					))}
+				</ul>
+			</nav>
+		))}
+	</div>
+	<div class="border-t border-hairline">
+		<div class="container-page flex flex-col gap-2 py-6 sm:flex-row sm:items-center sm:justify-between">
+			<p class="text-caption text-mute">
+				© {year} {SITE.name}. All rights reserved.
+			</p>
+			<p class="text-caption text-mute">Free and unlimited. No account needed.</p>
+		</div>
+	</div>
+</footer>

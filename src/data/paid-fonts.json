@@ -1,0 +1,2837 @@
+[
+  {
+    "id": "helvetica",
+    "name": "Helvetica",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Helvetica/fonts/"
+  },
+  {
+    "id": "helvetica-neue",
+    "name": "Helvetica Neue",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Helvetica%20Neue/fonts/"
+  },
+  {
+    "id": "helvetica-now",
+    "name": "Helvetica Now",
+    "foundry": "Monotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Helvetica%20Now/fonts/"
+  },
+  {
+    "id": "arial",
+    "name": "Arial",
+    "foundry": "Monotype",
+    "price": "From $25",
+    "category": "sans-serif",
+    "freeAlt": "arimo",
+    "url": "https://www.myfonts.com/search/Arial/fonts/"
+  },
+  {
+    "id": "arial-narrow",
+    "name": "Arial Narrow",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "roboto-condensed",
+    "url": "https://www.myfonts.com/search/Arial%20Narrow/fonts/"
+  },
+  {
+    "id": "arial-rounded-mt",
+    "name": "Arial Rounded MT",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "nunito",
+    "url": "https://www.myfonts.com/search/Arial%20Rounded%20MT/fonts/"
+  },
+  {
+    "id": "arial-black",
+    "name": "Arial Black",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "archivo-black",
+    "url": "https://www.myfonts.com/search/Arial%20Black/fonts/"
+  },
+  {
+    "id": "avenir",
+    "name": "Avenir",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "nunito-sans",
+    "url": "https://www.myfonts.com/search/Avenir/fonts/"
+  },
+  {
+    "id": "avenir-next",
+    "name": "Avenir Next",
+    "foundry": "Monotype",
+    "price": "From $39",
+    "category": "sans-serif",
+    "freeAlt": "nunito-sans",
+    "url": "https://www.myfonts.com/search/Avenir%20Next/fonts/"
+  },
+  {
+    "id": "avenir-next-rounded",
+    "name": "Avenir Next Rounded",
+    "foundry": "Monotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "nunito",
+    "url": "https://www.myfonts.com/search/Avenir%20Next%20Rounded/fonts/"
+  },
+  {
+    "id": "avenir-next-condensed",
+    "name": "Avenir Next Condensed",
+    "foundry": "Monotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "barlow-condensed",
+    "url": "https://www.myfonts.com/search/Avenir%20Next%20Condensed/fonts/"
+  },
+  {
+    "id": "futura",
+    "name": "Futura",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "jost",
+    "url": "https://www.myfonts.com/search/Futura/fonts/"
+  },
+  {
+    "id": "futura-pt",
+    "name": "Futura PT",
+    "foundry": "Paratype",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "jost",
+    "url": "https://www.myfonts.com/search/Futura%20PT/fonts/"
+  },
+  {
+    "id": "futura-now",
+    "name": "Futura Now",
+    "foundry": "Monotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "jost",
+    "url": "https://www.myfonts.com/search/Futura%20Now/fonts/"
+  },
+  {
+    "id": "gotham",
+    "name": "Gotham",
+    "foundry": "Hoefler & Co",
+    "price": "From $60",
+    "category": "sans-serif",
+    "freeAlt": "montserrat",
+    "url": "https://www.typography.com"
+  },
+  {
+    "id": "gotham-rounded",
+    "name": "Gotham Rounded",
+    "foundry": "Hoefler & Co",
+    "price": "From $60",
+    "category": "sans-serif",
+    "freeAlt": "nunito",
+    "url": "https://www.typography.com"
+  },
+  {
+    "id": "proxima-nova",
+    "name": "Proxima Nova",
+    "foundry": "Mark Simonson Studio",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "montserrat",
+    "url": "https://www.marksimonson.com"
+  },
+  {
+    "id": "proxima-soft",
+    "name": "Proxima Soft",
+    "foundry": "Mark Simonson Studio",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "nunito",
+    "url": "https://www.marksimonson.com"
+  },
+  {
+    "id": "graphik",
+    "name": "Graphik",
+    "foundry": "Commercial Type",
+    "price": "From $40",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://commercialtype.com"
+  },
+  {
+    "id": "graphik-condensed",
+    "name": "Graphik Condensed",
+    "foundry": "Commercial Type",
+    "price": "From $40",
+    "category": "sans-serif",
+    "freeAlt": "barlow-condensed",
+    "url": "https://commercialtype.com"
+  },
+  {
+    "id": "s-hne",
+    "name": "Söhne",
+    "foundry": "Klim Type Foundry",
+    "price": "From $80",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://klim.co.nz"
+  },
+  {
+    "id": "founders-grotesk",
+    "name": "Founders Grotesk",
+    "foundry": "Klim Type Foundry",
+    "price": "From $40",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://klim.co.nz"
+  },
+  {
+    "id": "apercu",
+    "name": "Apercu",
+    "foundry": "Colophon Foundry",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://colophon-foundry.org"
+  },
+  {
+    "id": "circular",
+    "name": "Circular",
+    "foundry": "Lineto",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "nunito-sans",
+    "url": "https://lineto.com"
+  },
+  {
+    "id": "akkurat",
+    "name": "Akkurat",
+    "foundry": "Lineto",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://lineto.com"
+  },
+  {
+    "id": "brown",
+    "name": "Brown",
+    "foundry": "Lineto",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "source-sans-3",
+    "url": "https://lineto.com"
+  },
+  {
+    "id": "aktiv-grotesk",
+    "name": "Aktiv Grotesk",
+    "foundry": "Dalton Maag",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Aktiv%20Grotesk/fonts/"
+  },
+  {
+    "id": "soleil",
+    "name": "Soleil",
+    "foundry": "Dalton Maag",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Soleil/fonts/"
+  },
+  {
+    "id": "ff-meta",
+    "name": "FF Meta",
+    "foundry": "FontFont",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "karla",
+    "url": "https://www.myfonts.com/search/FF%20Meta/fonts/"
+  },
+  {
+    "id": "ff-din",
+    "name": "FF Din",
+    "foundry": "FontFont",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "rajdhani",
+    "url": "https://www.myfonts.com/search/FF%20Din/fonts/"
+  },
+  {
+    "id": "ff-dax",
+    "name": "FF Dax",
+    "foundry": "FontFont",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "karla",
+    "url": "https://www.myfonts.com/search/FF%20Dax/fonts/"
+  },
+  {
+    "id": "ff-clan",
+    "name": "FF Clan",
+    "foundry": "FontFont",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/FF%20Clan/fonts/"
+  },
+  {
+    "id": "ff-kievit",
+    "name": "FF Kievit",
+    "foundry": "FontFont",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/FF%20Kievit/fonts/"
+  },
+  {
+    "id": "ff-scala-sans",
+    "name": "FF Scala Sans",
+    "foundry": "FontFont",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/FF%20Scala%20Sans/fonts/"
+  },
+  {
+    "id": "ff-unit",
+    "name": "FF Unit",
+    "foundry": "FontFont",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/FF%20Unit/fonts/"
+  },
+  {
+    "id": "ff-milo",
+    "name": "FF Milo",
+    "foundry": "FontFont",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/FF%20Milo/fonts/"
+  },
+  {
+    "id": "neue-haas-grotesk",
+    "name": "Neue Haas Grotesk",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Neue%20Haas%20Grotesk/fonts/"
+  },
+  {
+    "id": "neue-haas-unica",
+    "name": "Neue Haas Unica",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Neue%20Haas%20Unica/fonts/"
+  },
+  {
+    "id": "neue-frutiger",
+    "name": "Neue Frutiger",
+    "foundry": "Monotype / Linotype",
+    "price": "From $39",
+    "category": "sans-serif",
+    "freeAlt": "figtree",
+    "url": "https://www.myfonts.com/search/Neue%20Frutiger/fonts/"
+  },
+  {
+    "id": "univers",
+    "name": "Univers",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "archivo",
+    "url": "https://www.myfonts.com/search/Univers/fonts/"
+  },
+  {
+    "id": "univers-next",
+    "name": "Univers Next",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "archivo",
+    "url": "https://www.myfonts.com/search/Univers%20Next/fonts/"
+  },
+  {
+    "id": "frutiger",
+    "name": "Frutiger",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "figtree",
+    "url": "https://www.myfonts.com/search/Frutiger/fonts/"
+  },
+  {
+    "id": "myriad-pro",
+    "name": "Myriad Pro",
+    "foundry": "Adobe",
+    "price": "Subscription",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Myriad%20Pro/fonts/"
+  },
+  {
+    "id": "gill-sans",
+    "name": "Gill Sans",
+    "foundry": "Monotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "mulish",
+    "url": "https://www.myfonts.com/search/Gill%20Sans/fonts/"
+  },
+  {
+    "id": "gill-sans-mt",
+    "name": "Gill Sans MT",
+    "foundry": "Monotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "mulish",
+    "url": "https://www.myfonts.com/search/Gill%20Sans%20MT/fonts/"
+  },
+  {
+    "id": "optima",
+    "name": "Optima",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "assistant",
+    "url": "https://www.myfonts.com/search/Optima/fonts/"
+  },
+  {
+    "id": "century-gothic",
+    "name": "Century Gothic",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "questrial",
+    "url": "https://www.myfonts.com/search/Century%20Gothic/fonts/"
+  },
+  {
+    "id": "avant-garde-gothic",
+    "name": "Avant Garde Gothic",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "poppins",
+    "url": "https://www.myfonts.com/search/Avant%20Garde%20Gothic/fonts/"
+  },
+  {
+    "id": "eurostile",
+    "name": "Eurostile",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "michroma",
+    "url": "https://www.myfonts.com/search/Eurostile/fonts/"
+  },
+  {
+    "id": "bank-gothic",
+    "name": "Bank Gothic",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "oswald",
+    "url": "https://www.myfonts.com/search/Bank%20Gothic/fonts/"
+  },
+  {
+    "id": "din-next",
+    "name": "DIN Next",
+    "foundry": "Monotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "rajdhani",
+    "url": "https://www.myfonts.com/search/DIN%20Next/fonts/"
+  },
+  {
+    "id": "din-condensed",
+    "name": "DIN Condensed",
+    "foundry": "Monotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "barlow-condensed",
+    "url": "https://www.myfonts.com/search/DIN%20Condensed/fonts/"
+  },
+  {
+    "id": "trade-gothic",
+    "name": "Trade Gothic",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "archivo",
+    "url": "https://www.myfonts.com/search/Trade%20Gothic/fonts/"
+  },
+  {
+    "id": "news-gothic",
+    "name": "News Gothic",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "libre-franklin",
+    "url": "https://www.myfonts.com/search/News%20Gothic/fonts/"
+  },
+  {
+    "id": "franklin-gothic",
+    "name": "Franklin Gothic",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "libre-franklin",
+    "url": "https://www.myfonts.com/search/Franklin%20Gothic/fonts/"
+  },
+  {
+    "id": "akzidenz-grotesk",
+    "name": "Akzidenz-Grotesk",
+    "foundry": "Monotype / Berthold",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "arimo",
+    "url": "https://www.myfonts.com/search/Akzidenz-Grotesk/fonts/"
+  },
+  {
+    "id": "syntax",
+    "name": "Syntax",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Syntax/fonts/"
+  },
+  {
+    "id": "legacy-sans",
+    "name": "Legacy Sans",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Legacy%20Sans/fonts/"
+  },
+  {
+    "id": "neue-montreal",
+    "name": "Neue Montreal",
+    "foundry": "Pangram Pangram",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://pangrampangram.com"
+  },
+  {
+    "id": "general-sans",
+    "name": "General Sans",
+    "foundry": "Pangram Pangram",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://pangrampangram.com"
+  },
+  {
+    "id": "cabinet-grotesk",
+    "name": "Cabinet Grotesk",
+    "foundry": "Pangram Pangram",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://pangrampangram.com"
+  },
+  {
+    "id": "gt-america",
+    "name": "GT America",
+    "foundry": "Grilli Type",
+    "price": "From $60",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://grillitype.com"
+  },
+  {
+    "id": "gt-walsheim",
+    "name": "GT Walsheim",
+    "foundry": "Grilli Type",
+    "price": "From $60",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://grillitype.com"
+  },
+  {
+    "id": "gt-eesti",
+    "name": "GT Eesti",
+    "foundry": "Grilli Type",
+    "price": "From $60",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://grillitype.com"
+  },
+  {
+    "id": "gilroy",
+    "name": "Gilroy",
+    "foundry": "TypeType",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "poppins",
+    "url": "https://typetype.org"
+  },
+  {
+    "id": "tt-commons",
+    "name": "TT Commons",
+    "foundry": "TypeType",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://typetype.org"
+  },
+  {
+    "id": "tt-norms",
+    "name": "TT Norms",
+    "foundry": "TypeType",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://typetype.org"
+  },
+  {
+    "id": "tt-interphases",
+    "name": "TT Interphases",
+    "foundry": "TypeType",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://typetype.org"
+  },
+  {
+    "id": "tt-hoves",
+    "name": "TT Hoves",
+    "foundry": "TypeType",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://typetype.org"
+  },
+  {
+    "id": "whitney",
+    "name": "Whitney",
+    "foundry": "Hoefler & Co",
+    "price": "From $60",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.typography.com"
+  },
+  {
+    "id": "verlag",
+    "name": "Verlag",
+    "foundry": "Hoefler & Co",
+    "price": "From $60",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.typography.com"
+  },
+  {
+    "id": "ideal-sans",
+    "name": "Ideal Sans",
+    "foundry": "Hoefler & Co",
+    "price": "From $60",
+    "category": "sans-serif",
+    "freeAlt": "source-sans-3",
+    "url": "https://www.typography.com"
+  },
+  {
+    "id": "operator",
+    "name": "Operator",
+    "foundry": "Hoefler & Co",
+    "price": "From $60",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.typography.com"
+  },
+  {
+    "id": "benton-sans",
+    "name": "Benton Sans",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "source-sans-3",
+    "url": "https://www.myfonts.com/search/Benton%20Sans/fonts/"
+  },
+  {
+    "id": "benton-grotesque",
+    "name": "Benton Grotesque",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "archivo",
+    "url": "https://www.myfonts.com/search/Benton%20Grotesque/fonts/"
+  },
+  {
+    "id": "amplitude",
+    "name": "Amplitude",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "archivo",
+    "url": "https://www.myfonts.com/search/Amplitude/fonts/"
+  },
+  {
+    "id": "klavika",
+    "name": "Klavika",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "saira",
+    "url": "https://www.myfonts.com/search/Klavika/fonts/"
+  },
+  {
+    "id": "brandon-grotesque",
+    "name": "Brandon Grotesque",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "montserrat",
+    "url": "https://www.myfonts.com/search/Brandon%20Grotesque/fonts/"
+  },
+  {
+    "id": "brandon-text",
+    "name": "Brandon Text",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "montserrat",
+    "url": "https://www.myfonts.com/search/Brandon%20Text/fonts/"
+  },
+  {
+    "id": "modern-era",
+    "name": "Modern Era",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Modern%20Era/fonts/"
+  },
+  {
+    "id": "congress-sans",
+    "name": "Congress Sans",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "barlow-semi-condensed",
+    "url": "https://www.myfonts.com/search/Congress%20Sans/fonts/"
+  },
+  {
+    "id": "skolar-sans",
+    "name": "Skolar Sans",
+    "foundry": "TypeTogether",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "onest",
+    "url": "https://type-together.com"
+  },
+  {
+    "id": "lft-etica",
+    "name": "LFT Etica",
+    "foundry": "TypeTogether",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://type-together.com"
+  },
+  {
+    "id": "adelle-sans",
+    "name": "Adelle Sans",
+    "foundry": "TypeTogether",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://type-together.com"
+  },
+  {
+    "id": "maison-neue",
+    "name": "Maison Neue",
+    "foundry": "Milieu Grotesque",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Maison%20Neue/fonts/"
+  },
+  {
+    "id": "suisse-int-l",
+    "name": "Suisse Int’l",
+    "foundry": "Swiss Typefaces",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.swisstypefaces.com"
+  },
+  {
+    "id": "suisse-neue",
+    "name": "Suisse Neue",
+    "foundry": "Swiss Typefaces",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.swisstypefaces.com"
+  },
+  {
+    "id": "euclid-circular-a",
+    "name": "Euclid Circular A",
+    "foundry": "Swiss Typefaces",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.swisstypefaces.com"
+  },
+  {
+    "id": "object-sans",
+    "name": "Object Sans",
+    "foundry": "Swiss Typefaces",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.swisstypefaces.com"
+  },
+  {
+    "id": "abc-diatype",
+    "name": "ABC Diatype",
+    "foundry": "ABC Dinamo",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://abcdinamo.com"
+  },
+  {
+    "id": "abc-whyte",
+    "name": "ABC Whyte",
+    "foundry": "ABC Dinamo",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://abcdinamo.com"
+  },
+  {
+    "id": "sf-pro",
+    "name": "SF Pro",
+    "foundry": "Apple",
+    "price": "System font",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/SF%20Pro/fonts/"
+  },
+  {
+    "id": "sf-compact",
+    "name": "SF Compact",
+    "foundry": "Apple",
+    "price": "System font",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/SF%20Compact/fonts/"
+  },
+  {
+    "id": "sf-pro-rounded",
+    "name": "SF Pro Rounded",
+    "foundry": "Apple",
+    "price": "System font",
+    "category": "sans-serif",
+    "freeAlt": "nunito",
+    "url": "https://www.myfonts.com/search/SF%20Pro%20Rounded/fonts/"
+  },
+  {
+    "id": "segoe-ui",
+    "name": "Segoe UI",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Segoe%20UI/fonts/"
+  },
+  {
+    "id": "segoe-ui-variable",
+    "name": "Segoe UI Variable",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Segoe%20UI%20Variable/fonts/"
+  },
+  {
+    "id": "aptos",
+    "name": "Aptos",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Aptos/fonts/"
+  },
+  {
+    "id": "tahoma",
+    "name": "Tahoma",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "sans-serif",
+    "freeAlt": "arimo",
+    "url": "https://www.myfonts.com/search/Tahoma/fonts/"
+  },
+  {
+    "id": "verdana",
+    "name": "Verdana",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "sans-serif",
+    "freeAlt": "work-sans",
+    "url": "https://www.myfonts.com/search/Verdana/fonts/"
+  },
+  {
+    "id": "trebuchet-ms",
+    "name": "Trebuchet MS",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "sans-serif",
+    "freeAlt": "quicksand",
+    "url": "https://www.myfonts.com/search/Trebuchet%20MS/fonts/"
+  },
+  {
+    "id": "corbel",
+    "name": "Corbel",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "sans-serif",
+    "freeAlt": "figtree",
+    "url": "https://www.myfonts.com/search/Corbel/fonts/"
+  },
+  {
+    "id": "candara",
+    "name": "Candara",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "sans-serif",
+    "freeAlt": "figtree",
+    "url": "https://www.myfonts.com/search/Candara/fonts/"
+  },
+  {
+    "id": "calibri",
+    "name": "Calibri",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Calibri/fonts/"
+  },
+  {
+    "id": "bahnschrift",
+    "name": "Bahnschrift",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "sans-serif",
+    "freeAlt": "oswald",
+    "url": "https://www.myfonts.com/search/Bahnschrift/fonts/"
+  },
+  {
+    "id": "vag-rounded",
+    "name": "Vag Rounded",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "nunito",
+    "url": "https://www.myfonts.com/search/Vag%20Rounded/fonts/"
+  },
+  {
+    "id": "kabel",
+    "name": "Kabel",
+    "foundry": "Monotype / ITC",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "poppins",
+    "url": "https://www.myfonts.com/search/Kabel/fonts/"
+  },
+  {
+    "id": "metro",
+    "name": "Metro",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "poppins",
+    "url": "https://www.myfonts.com/search/Metro/fonts/"
+  },
+  {
+    "id": "geometric-415",
+    "name": "Geometric 415",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "poppins",
+    "url": "https://www.myfonts.com/search/Geometric%20415/fonts/"
+  },
+  {
+    "id": "handel-gothic",
+    "name": "Handel Gothic",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "exo",
+    "url": "https://www.myfonts.com/search/Handel%20Gothic/fonts/"
+  },
+  {
+    "id": "alternate-gothic-no-2",
+    "name": "Alternate Gothic No. 2",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "oswald",
+    "url": "https://www.myfonts.com/search/Alternate%20Gothic%20No.%202/fonts/"
+  },
+  {
+    "id": "helvetica-condensed",
+    "name": "Helvetica Condensed",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "archivo-narrow",
+    "url": "https://www.myfonts.com/search/Helvetica%20Condensed/fonts/"
+  },
+  {
+    "id": "univers-condensed",
+    "name": "Univers Condensed",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "archivo-narrow",
+    "url": "https://www.myfonts.com/search/Univers%20Condensed/fonts/"
+  },
+  {
+    "id": "futura-condensed",
+    "name": "Futura Condensed",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "barlow-condensed",
+    "url": "https://www.myfonts.com/search/Futura%20Condensed/fonts/"
+  },
+  {
+    "id": "pragmatica",
+    "name": "Pragmatica",
+    "foundry": "Paratype",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Pragmatica/fonts/"
+  },
+  {
+    "id": "mark-pro",
+    "name": "Mark Pro",
+    "foundry": "Fontsmith",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/Mark%20Pro/fonts/"
+  },
+  {
+    "id": "fs-elliot",
+    "name": "FS Elliot",
+    "foundry": "Fontsmith",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/FS%20Elliot/fonts/"
+  },
+  {
+    "id": "fs-albert",
+    "name": "FS Albert",
+    "foundry": "Fontsmith",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/FS%20Albert/fonts/"
+  },
+  {
+    "id": "fs-me",
+    "name": "FS Me",
+    "foundry": "Fontsmith",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.myfonts.com/search/FS%20Me/fonts/"
+  },
+  {
+    "id": "itc-eras",
+    "name": "ITC Eras",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "urbanist",
+    "url": "https://www.myfonts.com/search/ITC%20Eras/fonts/"
+  },
+  {
+    "id": "itc-kabel",
+    "name": "ITC Kabel",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "poppins",
+    "url": "https://www.myfonts.com/search/ITC%20Kabel/fonts/"
+  },
+  {
+    "id": "itc-lubalin-graph",
+    "name": "ITC Lubalin Graph",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "zilla-slab",
+    "url": "https://www.myfonts.com/search/ITC%20Lubalin%20Graph/fonts/"
+  },
+  {
+    "id": "itc-bolt",
+    "name": "ITC Bolt",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "anton",
+    "url": "https://www.myfonts.com/search/ITC%20Bolt/fonts/"
+  },
+  {
+    "id": "itc-machine",
+    "name": "ITC Machine",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "orbitron",
+    "url": "https://www.myfonts.com/search/ITC%20Machine/fonts/"
+  },
+  {
+    "id": "compacta",
+    "name": "Compacta",
+    "foundry": "Monotype / Letraset",
+    "price": "From $29",
+    "category": "sans-serif",
+    "freeAlt": "anton",
+    "url": "https://www.myfonts.com/search/Compacta/fonts/"
+  },
+  {
+    "id": "helvetica-inserat",
+    "name": "Helvetica Inserat",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "archivo-black",
+    "url": "https://www.myfonts.com/search/Helvetica%20Inserat/fonts/"
+  },
+  {
+    "id": "folio",
+    "name": "Folio",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "sans-serif",
+    "freeAlt": "oswald",
+    "url": "https://www.myfonts.com/search/Folio/fonts/"
+  },
+  {
+    "id": "neutraface",
+    "name": "Neutraface",
+    "foundry": "House Industries",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "montserrat",
+    "url": "https://houseind.com"
+  },
+  {
+    "id": "neutraface-2",
+    "name": "Neutraface 2",
+    "foundry": "House Industries",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "montserrat",
+    "url": "https://houseind.com"
+  },
+  {
+    "id": "chalet",
+    "name": "Chalet",
+    "foundry": "House Industries",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "comfortaa",
+    "url": "https://houseind.com"
+  },
+  {
+    "id": "objektiv",
+    "name": "Objektiv",
+    "foundry": "Swiss Typefaces",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://www.swisstypefaces.com"
+  },
+  {
+    "id": "obviously",
+    "name": "Obviously",
+    "foundry": "Swiss Typefaces",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "space-grotesk",
+    "url": "https://www.swisstypefaces.com"
+  },
+  {
+    "id": "galaxie-polaris",
+    "name": "Galaxie Polaris",
+    "foundry": "Village",
+    "price": "Commercial",
+    "category": "sans-serif",
+    "freeAlt": "inter",
+    "url": "https://vllg.com"
+  },
+  {
+    "id": "times-new-roman",
+    "name": "Times New Roman",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "serif",
+    "freeAlt": "tinos",
+    "url": "https://www.myfonts.com/search/Times%20New%20Roman/fonts/"
+  },
+  {
+    "id": "georgia",
+    "name": "Georgia",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Georgia/fonts/"
+  },
+  {
+    "id": "cambria",
+    "name": "Cambria",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Cambria/fonts/"
+  },
+  {
+    "id": "constantia",
+    "name": "Constantia",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Constantia/fonts/"
+  },
+  {
+    "id": "sitka",
+    "name": "Sitka",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Sitka/fonts/"
+  },
+  {
+    "id": "georgia-pro",
+    "name": "Georgia Pro",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Georgia%20Pro/fonts/"
+  },
+  {
+    "id": "garamond",
+    "name": "Garamond",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "eb-garamond",
+    "url": "https://www.myfonts.com/search/Garamond/fonts/"
+  },
+  {
+    "id": "adobe-garamond",
+    "name": "Adobe Garamond",
+    "foundry": "Adobe",
+    "price": "Subscription",
+    "category": "serif",
+    "freeAlt": "eb-garamond",
+    "url": "https://www.myfonts.com/search/Adobe%20Garamond/fonts/"
+  },
+  {
+    "id": "garamond-premier-pro",
+    "name": "Garamond Premier Pro",
+    "foundry": "Adobe",
+    "price": "Subscription",
+    "category": "serif",
+    "freeAlt": "eb-garamond",
+    "url": "https://www.myfonts.com/search/Garamond%20Premier%20Pro/fonts/"
+  },
+  {
+    "id": "itc-garamond",
+    "name": "ITC Garamond",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "eb-garamond",
+    "url": "https://www.myfonts.com/search/ITC%20Garamond/fonts/"
+  },
+  {
+    "id": "sabon",
+    "name": "Sabon",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "cormorant-garamond",
+    "url": "https://www.myfonts.com/search/Sabon/fonts/"
+  },
+  {
+    "id": "sabon-next",
+    "name": "Sabon Next",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "cormorant-garamond",
+    "url": "https://www.myfonts.com/search/Sabon%20Next/fonts/"
+  },
+  {
+    "id": "minion-pro",
+    "name": "Minion Pro",
+    "foundry": "Adobe",
+    "price": "Subscription",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Minion%20Pro/fonts/"
+  },
+  {
+    "id": "warnock-pro",
+    "name": "Warnock Pro",
+    "foundry": "Adobe",
+    "price": "Subscription",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Warnock%20Pro/fonts/"
+  },
+  {
+    "id": "palatino",
+    "name": "Palatino",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "cormorant",
+    "url": "https://www.myfonts.com/search/Palatino/fonts/"
+  },
+  {
+    "id": "palatino-linotype",
+    "name": "Palatino Linotype",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "serif",
+    "freeAlt": "cormorant",
+    "url": "https://www.myfonts.com/search/Palatino%20Linotype/fonts/"
+  },
+  {
+    "id": "book-antiqua",
+    "name": "Book Antiqua",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "serif",
+    "freeAlt": "cormorant",
+    "url": "https://www.myfonts.com/search/Book%20Antiqua/fonts/"
+  },
+  {
+    "id": "baskerville",
+    "name": "Baskerville",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "libre-baskerville",
+    "url": "https://www.myfonts.com/search/Baskerville/fonts/"
+  },
+  {
+    "id": "new-baskerville",
+    "name": "New Baskerville",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "libre-baskerville",
+    "url": "https://www.myfonts.com/search/New%20Baskerville/fonts/"
+  },
+  {
+    "id": "didot",
+    "name": "Didot",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "bodoni-moda",
+    "url": "https://www.myfonts.com/search/Didot/fonts/"
+  },
+  {
+    "id": "bodoni",
+    "name": "Bodoni",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "bodoni-moda",
+    "url": "https://www.myfonts.com/search/Bodoni/fonts/"
+  },
+  {
+    "id": "bodoni-72",
+    "name": "Bodoni 72",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "bodoni-moda",
+    "url": "https://www.myfonts.com/search/Bodoni%2072/fonts/"
+  },
+  {
+    "id": "caslon",
+    "name": "Caslon",
+    "foundry": "Adobe",
+    "price": "Subscription",
+    "category": "serif",
+    "freeAlt": "libre-caslon-text",
+    "url": "https://www.myfonts.com/search/Caslon/fonts/"
+  },
+  {
+    "id": "big-caslon",
+    "name": "Big Caslon",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "libre-caslon-text",
+    "url": "https://www.myfonts.com/search/Big%20Caslon/fonts/"
+  },
+  {
+    "id": "caslon-540",
+    "name": "Caslon 540",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "libre-caslon-text",
+    "url": "https://www.myfonts.com/search/Caslon%20540/fonts/"
+  },
+  {
+    "id": "itc-caslon-224",
+    "name": "ITC Caslon 224",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "libre-caslon-text",
+    "url": "https://www.myfonts.com/search/ITC%20Caslon%20224/fonts/"
+  },
+  {
+    "id": "goudy-old-style",
+    "name": "Goudy Old Style",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "serif",
+    "freeAlt": "cormorant",
+    "url": "https://www.myfonts.com/search/Goudy%20Old%20Style/fonts/"
+  },
+  {
+    "id": "trajan",
+    "name": "Trajan",
+    "foundry": "Adobe",
+    "price": "Subscription",
+    "category": "serif",
+    "freeAlt": "cinzel",
+    "url": "https://www.myfonts.com/search/Trajan/fonts/"
+  },
+  {
+    "id": "trajan-pro",
+    "name": "Trajan Pro",
+    "foundry": "Adobe",
+    "price": "Subscription",
+    "category": "serif",
+    "freeAlt": "cinzel",
+    "url": "https://www.myfonts.com/search/Trajan%20Pro/fonts/"
+  },
+  {
+    "id": "perpetua",
+    "name": "Perpetua",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "serif",
+    "freeAlt": "spectral",
+    "url": "https://www.myfonts.com/search/Perpetua/fonts/"
+  },
+  {
+    "id": "bembo",
+    "name": "Bembo",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "spectral",
+    "url": "https://www.myfonts.com/search/Bembo/fonts/"
+  },
+  {
+    "id": "centaur",
+    "name": "Centaur",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "serif",
+    "freeAlt": "spectral",
+    "url": "https://www.myfonts.com/search/Centaur/fonts/"
+  },
+  {
+    "id": "jenson",
+    "name": "Jenson",
+    "foundry": "Adobe",
+    "price": "Subscription",
+    "category": "serif",
+    "freeAlt": "spectral",
+    "url": "https://www.myfonts.com/search/Jenson/fonts/"
+  },
+  {
+    "id": "century-schoolbook",
+    "name": "Century Schoolbook",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Century%20Schoolbook/fonts/"
+  },
+  {
+    "id": "new-century-schoolbook",
+    "name": "New Century Schoolbook",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/New%20Century%20Schoolbook/fonts/"
+  },
+  {
+    "id": "bookman",
+    "name": "Bookman",
+    "foundry": "Monotype / ITC",
+    "price": "From $29",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Bookman/fonts/"
+  },
+  {
+    "id": "souvenir",
+    "name": "Souvenir",
+    "foundry": "Monotype / ITC",
+    "price": "From $29",
+    "category": "serif",
+    "freeAlt": "zilla-slab",
+    "url": "https://www.myfonts.com/search/Souvenir/fonts/"
+  },
+  {
+    "id": "rockwell",
+    "name": "Rockwell",
+    "foundry": "Monotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "zilla-slab",
+    "url": "https://www.myfonts.com/search/Rockwell/fonts/"
+  },
+  {
+    "id": "rockwell-extra-bold",
+    "name": "Rockwell Extra Bold",
+    "foundry": "Monotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "zilla-slab",
+    "url": "https://www.myfonts.com/search/Rockwell%20Extra%20Bold/fonts/"
+  },
+  {
+    "id": "memphis",
+    "name": "Memphis",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "serif",
+    "freeAlt": "zilla-slab",
+    "url": "https://www.myfonts.com/search/Memphis/fonts/"
+  },
+  {
+    "id": "stymie",
+    "name": "Stymie",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "serif",
+    "freeAlt": "zilla-slab",
+    "url": "https://www.myfonts.com/search/Stymie/fonts/"
+  },
+  {
+    "id": "serifa",
+    "name": "Serifa",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "serif",
+    "freeAlt": "zilla-slab",
+    "url": "https://www.myfonts.com/search/Serifa/fonts/"
+  },
+  {
+    "id": "archer",
+    "name": "Archer",
+    "foundry": "Hoefler & Co",
+    "price": "From $60",
+    "category": "serif",
+    "freeAlt": "nunito",
+    "url": "https://www.typography.com"
+  },
+  {
+    "id": "chronicle",
+    "name": "Chronicle",
+    "foundry": "Hoefler & Co",
+    "price": "From $60",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.typography.com"
+  },
+  {
+    "id": "sentinel",
+    "name": "Sentinel",
+    "foundry": "Hoefler & Co",
+    "price": "From $60",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.typography.com"
+  },
+  {
+    "id": "mercury",
+    "name": "Mercury",
+    "foundry": "Hoefler & Co",
+    "price": "From $60",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.typography.com"
+  },
+  {
+    "id": "surveyor",
+    "name": "Surveyor",
+    "foundry": "Hoefler & Co",
+    "price": "From $60",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.typography.com"
+  },
+  {
+    "id": "lyon",
+    "name": "Lyon",
+    "foundry": "Commercial Type",
+    "price": "From $40",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://commercialtype.com"
+  },
+  {
+    "id": "publico",
+    "name": "Publico",
+    "foundry": "Commercial Type",
+    "price": "From $40",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://commercialtype.com"
+  },
+  {
+    "id": "canela",
+    "name": "Canela",
+    "foundry": "Commercial Type",
+    "price": "From $40",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://commercialtype.com"
+  },
+  {
+    "id": "hidalgo",
+    "name": "Hidalgo",
+    "foundry": "Commercial Type",
+    "price": "From $40",
+    "category": "serif",
+    "freeAlt": "newsreader",
+    "url": "https://commercialtype.com"
+  },
+  {
+    "id": "fremont",
+    "name": "Fremont",
+    "foundry": "Commercial Type",
+    "price": "From $40",
+    "category": "serif",
+    "freeAlt": "newsreader",
+    "url": "https://commercialtype.com"
+  },
+  {
+    "id": "dala-floda",
+    "name": "Dala Floda",
+    "foundry": "Commercial Type",
+    "price": "From $40",
+    "category": "serif",
+    "freeAlt": "playfair-display",
+    "url": "https://commercialtype.com"
+  },
+  {
+    "id": "tiempos",
+    "name": "Tiempos",
+    "foundry": "Klim Type Foundry",
+    "price": "From $40",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://klim.co.nz"
+  },
+  {
+    "id": "domaine",
+    "name": "Domaine",
+    "foundry": "Klim Type Foundry",
+    "price": "From $40",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://klim.co.nz"
+  },
+  {
+    "id": "freight",
+    "name": "Freight",
+    "foundry": "Darden Studio",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.dardenstudio.com"
+  },
+  {
+    "id": "freight-text",
+    "name": "Freight Text",
+    "foundry": "Darden Studio",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.dardenstudio.com"
+  },
+  {
+    "id": "miller",
+    "name": "Miller",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Miller/fonts/"
+  },
+  {
+    "id": "austin",
+    "name": "Austin",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Austin/fonts/"
+  },
+  {
+    "id": "farnham",
+    "name": "Farnham",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Farnham/fonts/"
+  },
+  {
+    "id": "escrow",
+    "name": "Escrow",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Escrow/fonts/"
+  },
+  {
+    "id": "malabar",
+    "name": "Malabar",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Malabar/fonts/"
+  },
+  {
+    "id": "coranto",
+    "name": "Coranto",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Coranto/fonts/"
+  },
+  {
+    "id": "cheltenham",
+    "name": "Cheltenham",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Cheltenham/fonts/"
+  },
+  {
+    "id": "nyt-cheltenham",
+    "name": "NYT Cheltenham",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/NYT%20Cheltenham/fonts/"
+  },
+  {
+    "id": "gt-sectra",
+    "name": "GT Sectra",
+    "foundry": "Grilli Type",
+    "price": "From $60",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://grillitype.com"
+  },
+  {
+    "id": "gt-alpina",
+    "name": "GT Alpina",
+    "foundry": "Grilli Type",
+    "price": "From $60",
+    "category": "serif",
+    "freeAlt": "newsreader",
+    "url": "https://grillitype.com"
+  },
+  {
+    "id": "noe-display",
+    "name": "Noe Display",
+    "foundry": "TypeType",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "playfair-display",
+    "url": "https://typetype.org"
+  },
+  {
+    "id": "recoleta",
+    "name": "Recoleta",
+    "foundry": "Latinotype",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "playfair-display",
+    "url": "https://www.latinotype.com"
+  },
+  {
+    "id": "adelle",
+    "name": "Adelle",
+    "foundry": "TypeTogether",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://type-together.com"
+  },
+  {
+    "id": "skolar",
+    "name": "Skolar",
+    "foundry": "TypeTogether",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "spectral",
+    "url": "https://type-together.com"
+  },
+  {
+    "id": "elena",
+    "name": "Elena",
+    "foundry": "TypeTogether",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://type-together.com"
+  },
+  {
+    "id": "moret",
+    "name": "Moret",
+    "foundry": "TypeTogether",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://type-together.com"
+  },
+  {
+    "id": "arnhem",
+    "name": "Arnhem",
+    "foundry": "OurType",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://ourtype.com"
+  },
+  {
+    "id": "utopia",
+    "name": "Utopia",
+    "foundry": "Adobe",
+    "price": "Subscription",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Utopia/fonts/"
+  },
+  {
+    "id": "iowan-old-style",
+    "name": "Iowan Old Style",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Iowan%20Old%20Style/fonts/"
+  },
+  {
+    "id": "charter",
+    "name": "Charter",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Charter/fonts/"
+  },
+  {
+    "id": "athelas",
+    "name": "Athelas",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Athelas/fonts/"
+  },
+  {
+    "id": "hoefler-text",
+    "name": "Hoefler Text",
+    "foundry": "Apple",
+    "price": "System font",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Hoefler%20Text/fonts/"
+  },
+  {
+    "id": "new-york",
+    "name": "New York",
+    "foundry": "Apple",
+    "price": "System font",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/New%20York/fonts/"
+  },
+  {
+    "id": "mrs-eaves",
+    "name": "Mrs Eaves",
+    "foundry": "Emigre",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "cormorant",
+    "url": "https://www.emigre.com"
+  },
+  {
+    "id": "filosofia",
+    "name": "Filosofia",
+    "foundry": "Emigre",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "cormorant-garamond",
+    "url": "https://www.emigre.com"
+  },
+  {
+    "id": "kepler",
+    "name": "Kepler",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Kepler/fonts/"
+  },
+  {
+    "id": "walbaum",
+    "name": "Walbaum",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "spectral",
+    "url": "https://www.myfonts.com/search/Walbaum/fonts/"
+  },
+  {
+    "id": "meridien",
+    "name": "Meridien",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Meridien/fonts/"
+  },
+  {
+    "id": "cochin",
+    "name": "Cochin",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Cochin/fonts/"
+  },
+  {
+    "id": "itc-berkeley-old-style",
+    "name": "ITC Berkeley Old Style",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/ITC%20Berkeley%20Old%20Style/fonts/"
+  },
+  {
+    "id": "itc-stone-serif",
+    "name": "ITC Stone Serif",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/ITC%20Stone%20Serif/fonts/"
+  },
+  {
+    "id": "amasis",
+    "name": "Amasis",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Amasis/fonts/"
+  },
+  {
+    "id": "ff-tisa",
+    "name": "FF Tisa",
+    "foundry": "FontFont",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/FF%20Tisa/fonts/"
+  },
+  {
+    "id": "lapture",
+    "name": "Lapture",
+    "foundry": "FontFont",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "source-serif-4",
+    "url": "https://www.myfonts.com/search/Lapture/fonts/"
+  },
+  {
+    "id": "doves-type",
+    "name": "Doves Type",
+    "foundry": "Monotype / ITC",
+    "price": "Commercial",
+    "category": "serif",
+    "freeAlt": "playfair-display",
+    "url": "https://www.myfonts.com/search/Doves%20Type/fonts/"
+  },
+  {
+    "id": "cooper-black",
+    "name": "Cooper Black",
+    "foundry": "Monotype",
+    "price": "From $35",
+    "category": "display",
+    "freeAlt": "fredoka",
+    "url": "https://www.myfonts.com/search/Cooper%20Black/fonts/"
+  },
+  {
+    "id": "bauhaus-93",
+    "name": "Bauhaus 93",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "comfortaa",
+    "url": "https://www.myfonts.com/search/Bauhaus%2093/fonts/"
+  },
+  {
+    "id": "itc-bauhaus",
+    "name": "ITC Bauhaus",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "display",
+    "freeAlt": "comfortaa",
+    "url": "https://www.myfonts.com/search/ITC%20Bauhaus/fonts/"
+  },
+  {
+    "id": "hobo",
+    "name": "Hobo",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "comfortaa",
+    "url": "https://www.myfonts.com/search/Hobo/fonts/"
+  },
+  {
+    "id": "papyrus",
+    "name": "Papyrus",
+    "foundry": "Adobe",
+    "price": "Subscription",
+    "category": "display",
+    "freeAlt": "philosopher",
+    "url": "https://www.myfonts.com/search/Papyrus/fonts/"
+  },
+  {
+    "id": "broadway",
+    "name": "Broadway",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "righteous",
+    "url": "https://www.myfonts.com/search/Broadway/fonts/"
+  },
+  {
+    "id": "showcard",
+    "name": "Showcard",
+    "foundry": "Monotype / Letraset",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "luckiest-guy",
+    "url": "https://www.myfonts.com/search/Showcard/fonts/"
+  },
+  {
+    "id": "chiller",
+    "name": "Chiller",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "creepster",
+    "url": "https://www.myfonts.com/search/Chiller/fonts/"
+  },
+  {
+    "id": "jokerman",
+    "name": "Jokerman",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "monoton",
+    "url": "https://www.myfonts.com/search/Jokerman/fonts/"
+  },
+  {
+    "id": "castellar",
+    "name": "Castellar",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "cinzel-decorative",
+    "url": "https://www.myfonts.com/search/Castellar/fonts/"
+  },
+  {
+    "id": "felix-titling",
+    "name": "Felix Titling",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "cinzel-decorative",
+    "url": "https://www.myfonts.com/search/Felix%20Titling/fonts/"
+  },
+  {
+    "id": "albertus",
+    "name": "Albertus",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "marcellus",
+    "url": "https://www.myfonts.com/search/Albertus/fonts/"
+  },
+  {
+    "id": "benguiat",
+    "name": "Benguiat",
+    "foundry": "Monotype / ITC",
+    "price": "From $35",
+    "category": "display",
+    "freeAlt": "marcellus",
+    "url": "https://www.myfonts.com/search/Benguiat/fonts/"
+  },
+  {
+    "id": "friz-quadrata",
+    "name": "Friz Quadrata",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "marcellus",
+    "url": "https://www.myfonts.com/search/Friz%20Quadrata/fonts/"
+  },
+  {
+    "id": "copperplate",
+    "name": "Copperplate",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "oswald",
+    "url": "https://www.myfonts.com/search/Copperplate/fonts/"
+  },
+  {
+    "id": "copperplate-gothic",
+    "name": "Copperplate Gothic",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "oswald",
+    "url": "https://www.myfonts.com/search/Copperplate%20Gothic/fonts/"
+  },
+  {
+    "id": "impact",
+    "name": "Impact",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "anton",
+    "url": "https://www.myfonts.com/search/Impact/fonts/"
+  },
+  {
+    "id": "haettenschweiler",
+    "name": "Haettenschweiler",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "anton",
+    "url": "https://www.myfonts.com/search/Haettenschweiler/fonts/"
+  },
+  {
+    "id": "stencil",
+    "name": "Stencil",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "stardos-stencil",
+    "url": "https://www.myfonts.com/search/Stencil/fonts/"
+  },
+  {
+    "id": "empire",
+    "name": "Empire",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "cinzel-decorative",
+    "url": "https://www.myfonts.com/search/Empire/fonts/"
+  },
+  {
+    "id": "druk",
+    "name": "Druk",
+    "foundry": "ABC Dinamo",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "oswald",
+    "url": "https://abcdinamo.com"
+  },
+  {
+    "id": "druk-wide",
+    "name": "Druk Wide",
+    "foundry": "ABC Dinamo",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "oswald",
+    "url": "https://abcdinamo.com"
+  },
+  {
+    "id": "druk-text",
+    "name": "Druk Text",
+    "foundry": "ABC Dinamo",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "oswald",
+    "url": "https://abcdinamo.com"
+  },
+  {
+    "id": "neue-machina",
+    "name": "Neue Machina",
+    "foundry": "Swiss Typefaces",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "space-grotesk",
+    "url": "https://www.swisstypefaces.com"
+  },
+  {
+    "id": "format-1452",
+    "name": "Format 1452",
+    "foundry": "Swiss Typefaces",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "space-grotesk",
+    "url": "https://www.swisstypefaces.com"
+  },
+  {
+    "id": "transport",
+    "name": "Transport",
+    "foundry": "SUN",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "oswald",
+    "url": "https://sun-international.com"
+  },
+  {
+    "id": "signpainter",
+    "name": "SignPainter",
+    "foundry": "House Industries",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "permanent-marker",
+    "url": "https://houseind.com"
+  },
+  {
+    "id": "villain",
+    "name": "Villain",
+    "foundry": "Colophon Foundry",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "bungee",
+    "url": "https://colophon-foundry.org"
+  },
+  {
+    "id": "walter",
+    "name": "Walter",
+    "foundry": "Colophon Foundry",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "fredoka",
+    "url": "https://colophon-foundry.org"
+  },
+  {
+    "id": "david",
+    "name": "David",
+    "foundry": "Colophon Foundry",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "montserrat",
+    "url": "https://colophon-foundry.org"
+  },
+  {
+    "id": "laca",
+    "name": "Laca",
+    "foundry": "Colophon Foundry",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "poppins",
+    "url": "https://colophon-foundry.org"
+  },
+  {
+    "id": "prototype",
+    "name": "Prototype",
+    "foundry": "Emigre",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "space-grotesk",
+    "url": "https://www.emigre.com"
+  },
+  {
+    "id": "didoni",
+    "name": "Didoni",
+    "foundry": "Font Bureau",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "bodoni-moda",
+    "url": "https://www.myfonts.com/search/Didoni/fonts/"
+  },
+  {
+    "id": "huset",
+    "name": "Huset",
+    "foundry": "Colophon Foundry",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "unbounded",
+    "url": "https://colophon-foundry.org"
+  },
+  {
+    "id": "clash-display",
+    "name": "Clash Display",
+    "foundry": "Pangram Pangram",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "space-grotesk",
+    "url": "https://pangrampangram.com"
+  },
+  {
+    "id": "zapf-humanist",
+    "name": "Zapf Humanist",
+    "foundry": "Monotype / Linotype",
+    "price": "Commercial",
+    "category": "display",
+    "freeAlt": "spectral",
+    "url": "https://www.myfonts.com/search/Zapf%20Humanist/fonts/"
+  },
+  {
+    "id": "gill-sans-ultra-bold",
+    "name": "Gill Sans Ultra Bold",
+    "foundry": "Monotype",
+    "price": "From $35",
+    "category": "display",
+    "freeAlt": "alegreya",
+    "url": "https://www.myfonts.com/search/Gill%20Sans%20Ultra%20Bold/fonts/"
+  },
+  {
+    "id": "tw-cen-mt",
+    "name": "Tw Cen MT",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "display",
+    "freeAlt": "urbanist",
+    "url": "https://www.myfonts.com/search/Tw%20Cen%20MT/fonts/"
+  },
+  {
+    "id": "brush-script",
+    "name": "Brush Script",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "handwriting",
+    "freeAlt": "pacifico",
+    "url": "https://www.myfonts.com/search/Brush%20Script/fonts/"
+  },
+  {
+    "id": "zapfino",
+    "name": "Zapfino",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "handwriting",
+    "freeAlt": "great-vibes",
+    "url": "https://www.myfonts.com/search/Zapfino/fonts/"
+  },
+  {
+    "id": "snell-roundhand",
+    "name": "Snell Roundhand",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "handwriting",
+    "freeAlt": "great-vibes",
+    "url": "https://www.myfonts.com/search/Snell%20Roundhand/fonts/"
+  },
+  {
+    "id": "edwardian-script",
+    "name": "Edwardian Script",
+    "foundry": "Adobe",
+    "price": "Subscription",
+    "category": "handwriting",
+    "freeAlt": "dancing-script",
+    "url": "https://www.myfonts.com/search/Edwardian%20Script/fonts/"
+  },
+  {
+    "id": "lucida-handwriting",
+    "name": "Lucida Handwriting",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "handwriting",
+    "freeAlt": "dancing-script",
+    "url": "https://www.myfonts.com/search/Lucida%20Handwriting/fonts/"
+  },
+  {
+    "id": "lucida-calligraphy",
+    "name": "Lucida Calligraphy",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "handwriting",
+    "freeAlt": "dancing-script",
+    "url": "https://www.myfonts.com/search/Lucida%20Calligraphy/fonts/"
+  },
+  {
+    "id": "mistral",
+    "name": "Mistral",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "handwriting",
+    "freeAlt": "dancing-script",
+    "url": "https://www.myfonts.com/search/Mistral/fonts/"
+  },
+  {
+    "id": "vivaldi",
+    "name": "Vivaldi",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "handwriting",
+    "freeAlt": "great-vibes",
+    "url": "https://www.myfonts.com/search/Vivaldi/fonts/"
+  },
+  {
+    "id": "vladimir-script",
+    "name": "Vladimir Script",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "handwriting",
+    "freeAlt": "pacifico",
+    "url": "https://www.myfonts.com/search/Vladimir%20Script/fonts/"
+  },
+  {
+    "id": "blackadder-itc",
+    "name": "Blackadder ITC",
+    "foundry": "Monotype / ITC",
+    "price": "From $29",
+    "category": "handwriting",
+    "freeAlt": "great-vibes",
+    "url": "https://www.myfonts.com/search/Blackadder%20ITC/fonts/"
+  },
+  {
+    "id": "viner-hand",
+    "name": "Viner Hand",
+    "foundry": "Monotype / ITC",
+    "price": "From $29",
+    "category": "handwriting",
+    "freeAlt": "kalam",
+    "url": "https://www.myfonts.com/search/Viner%20Hand/fonts/"
+  },
+  {
+    "id": "bradley-hand",
+    "name": "Bradley Hand",
+    "foundry": "Monotype / ITC",
+    "price": "From $29",
+    "category": "handwriting",
+    "freeAlt": "shadows-into-light",
+    "url": "https://www.myfonts.com/search/Bradley%20Hand/fonts/"
+  },
+  {
+    "id": "freestyle-script",
+    "name": "Freestyle Script",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "handwriting",
+    "freeAlt": "pacifico",
+    "url": "https://www.myfonts.com/search/Freestyle%20Script/fonts/"
+  },
+  {
+    "id": "handwriting-dakota",
+    "name": "Handwriting Dakota",
+    "foundry": "Monotype / ITC",
+    "price": "From $29",
+    "category": "handwriting",
+    "freeAlt": "kalam",
+    "url": "https://www.myfonts.com/search/Handwriting%20Dakota/fonts/"
+  },
+  {
+    "id": "chalkboard",
+    "name": "Chalkboard",
+    "foundry": "Apple",
+    "price": "System font",
+    "category": "handwriting",
+    "freeAlt": "shadows-into-light",
+    "url": "https://www.myfonts.com/search/Chalkboard/fonts/"
+  },
+  {
+    "id": "marker-felt",
+    "name": "Marker Felt",
+    "foundry": "Apple",
+    "price": "System font",
+    "category": "handwriting",
+    "freeAlt": "permanent-marker",
+    "url": "https://www.myfonts.com/search/Marker%20Felt/fonts/"
+  },
+  {
+    "id": "comic-sans-ms",
+    "name": "Comic Sans MS",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "handwriting",
+    "freeAlt": "comic-neue",
+    "url": "https://www.myfonts.com/search/Comic%20Sans%20MS/fonts/"
+  },
+  {
+    "id": "segoe-script",
+    "name": "Segoe Script",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "handwriting",
+    "freeAlt": "dancing-script",
+    "url": "https://www.myfonts.com/search/Segoe%20Script/fonts/"
+  },
+  {
+    "id": "segoe-print",
+    "name": "Segoe Print",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "handwriting",
+    "freeAlt": "shadows-into-light",
+    "url": "https://www.myfonts.com/search/Segoe%20Print/fonts/"
+  },
+  {
+    "id": "gabriola",
+    "name": "Gabriola",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "handwriting",
+    "freeAlt": "great-vibes",
+    "url": "https://www.myfonts.com/search/Gabriola/fonts/"
+  },
+  {
+    "id": "apple-chancery",
+    "name": "Apple Chancery",
+    "foundry": "Apple",
+    "price": "System font",
+    "category": "handwriting",
+    "freeAlt": "great-vibes",
+    "url": "https://www.myfonts.com/search/Apple%20Chancery/fonts/"
+  },
+  {
+    "id": "snap-itc",
+    "name": "Snap ITC",
+    "foundry": "Monotype / ITC",
+    "price": "From $29",
+    "category": "handwriting",
+    "freeAlt": "shadows-into-light",
+    "url": "https://www.myfonts.com/search/Snap%20ITC/fonts/"
+  },
+  {
+    "id": "matisse-itc",
+    "name": "Matisse ITC",
+    "foundry": "Monotype / ITC",
+    "price": "From $29",
+    "category": "handwriting",
+    "freeAlt": "great-vibes",
+    "url": "https://www.myfonts.com/search/Matisse%20ITC/fonts/"
+  },
+  {
+    "id": "bickham-script",
+    "name": "Bickham Script",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "handwriting",
+    "freeAlt": "great-vibes",
+    "url": "https://www.myfonts.com/search/Bickham%20Script/fonts/"
+  },
+  {
+    "id": "shelley-andante",
+    "name": "Shelley Andante",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "handwriting",
+    "freeAlt": "dancing-script",
+    "url": "https://www.myfonts.com/search/Shelley%20Andante/fonts/"
+  },
+  {
+    "id": "shelley-allegro",
+    "name": "Shelley Allegro",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "handwriting",
+    "freeAlt": "dancing-script",
+    "url": "https://www.myfonts.com/search/Shelley%20Allegro/fonts/"
+  },
+  {
+    "id": "kuenstler-script",
+    "name": "Kuenstler Script",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "handwriting",
+    "freeAlt": "great-vibes",
+    "url": "https://www.myfonts.com/search/Kuenstler%20Script/fonts/"
+  },
+  {
+    "id": "palace-script",
+    "name": "Palace Script",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "handwriting",
+    "freeAlt": "great-vibes",
+    "url": "https://www.myfonts.com/search/Palace%20Script/fonts/"
+  },
+  {
+    "id": "commercial-script",
+    "name": "Commercial Script",
+    "foundry": "Monotype / Linotype",
+    "price": "From $35",
+    "category": "handwriting",
+    "freeAlt": "great-vibes",
+    "url": "https://www.myfonts.com/search/Commercial%20Script/fonts/"
+  },
+  {
+    "id": "signpainter-housescript",
+    "name": "SignPainter HouseScript",
+    "foundry": "House Industries",
+    "price": "Commercial",
+    "category": "handwriting",
+    "freeAlt": "dancing-script",
+    "url": "https://houseind.com"
+  },
+  {
+    "id": "felt-tip-roman",
+    "name": "Felt Tip Roman",
+    "foundry": "House Industries",
+    "price": "Commercial",
+    "category": "handwriting",
+    "freeAlt": "shadows-into-light",
+    "url": "https://houseind.com"
+  },
+  {
+    "id": "courier-new",
+    "name": "Courier New",
+    "foundry": "Monotype",
+    "price": "From $25",
+    "category": "monospace",
+    "freeAlt": "courier-prime",
+    "url": "https://www.myfonts.com/search/Courier%20New/fonts/"
+  },
+  {
+    "id": "courier",
+    "name": "Courier",
+    "foundry": "Monotype / Linotype",
+    "price": "From $25",
+    "category": "monospace",
+    "freeAlt": "courier-prime",
+    "url": "https://www.myfonts.com/search/Courier/fonts/"
+  },
+  {
+    "id": "courier-std",
+    "name": "Courier Std",
+    "foundry": "Adobe",
+    "price": "Subscription",
+    "category": "monospace",
+    "freeAlt": "courier-prime",
+    "url": "https://www.myfonts.com/search/Courier%20Std/fonts/"
+  },
+  {
+    "id": "courier-final-draft",
+    "name": "Courier Final Draft",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "monospace",
+    "freeAlt": "courier-prime",
+    "url": "https://www.myfonts.com/search/Courier%20Final%20Draft/fonts/"
+  },
+  {
+    "id": "consolas",
+    "name": "Consolas",
+    "foundry": "Microsoft",
+    "price": "System font",
+    "category": "monospace",
+    "freeAlt": "jetbrains-mono",
+    "url": "https://www.myfonts.com/search/Consolas/fonts/"
+  },
+  {
+    "id": "menlo",
+    "name": "Menlo",
+    "foundry": "Apple",
+    "price": "System font",
+    "category": "monospace",
+    "freeAlt": "jetbrains-mono",
+    "url": "https://www.myfonts.com/search/Menlo/fonts/"
+  },
+  {
+    "id": "monaco",
+    "name": "Monaco",
+    "foundry": "Apple",
+    "price": "System font",
+    "category": "monospace",
+    "freeAlt": "space-mono",
+    "url": "https://www.myfonts.com/search/Monaco/fonts/"
+  },
+  {
+    "id": "sf-mono",
+    "name": "SF Mono",
+    "foundry": "Apple",
+    "price": "System font",
+    "category": "monospace",
+    "freeAlt": "jetbrains-mono",
+    "url": "https://www.myfonts.com/search/SF%20Mono/fonts/"
+  },
+  {
+    "id": "andale-mono",
+    "name": "Andale Mono",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "monospace",
+    "freeAlt": "ibm-plex-mono",
+    "url": "https://www.myfonts.com/search/Andale%20Mono/fonts/"
+  },
+  {
+    "id": "ocr-a",
+    "name": "OCR-A",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "monospace",
+    "freeAlt": "ibm-plex-mono",
+    "url": "https://www.myfonts.com/search/OCR-A/fonts/"
+  },
+  {
+    "id": "ocr-b",
+    "name": "OCR-B",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "monospace",
+    "freeAlt": "ibm-plex-mono",
+    "url": "https://www.myfonts.com/search/OCR-B/fonts/"
+  },
+  {
+    "id": "letter-gothic",
+    "name": "Letter Gothic",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "monospace",
+    "freeAlt": "space-mono",
+    "url": "https://www.myfonts.com/search/Letter%20Gothic/fonts/"
+  },
+  {
+    "id": "lucida-console",
+    "name": "Lucida Console",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "monospace",
+    "freeAlt": "jetbrains-mono",
+    "url": "https://www.myfonts.com/search/Lucida%20Console/fonts/"
+  },
+  {
+    "id": "lucida-sans-typewriter",
+    "name": "Lucida Sans Typewriter",
+    "foundry": "Monotype",
+    "price": "From $29",
+    "category": "monospace",
+    "freeAlt": "jetbrains-mono",
+    "url": "https://www.myfonts.com/search/Lucida%20Sans%20Typewriter/fonts/"
+  },
+  {
+    "id": "american-typewriter",
+    "name": "American Typewriter",
+    "foundry": "Monotype",
+    "price": "From $35",
+    "category": "monospace",
+    "freeAlt": "courier-prime",
+    "url": "https://www.myfonts.com/search/American%20Typewriter/fonts/"
+  },
+  {
+    "id": "prestige-elite",
+    "name": "Prestige Elite",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "monospace",
+    "freeAlt": "special-elite",
+    "url": "https://www.myfonts.com/search/Prestige%20Elite/fonts/"
+  },
+  {
+    "id": "elite",
+    "name": "Elite",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "monospace",
+    "freeAlt": "special-elite",
+    "url": "https://www.myfonts.com/search/Elite/fonts/"
+  },
+  {
+    "id": "pica-10-pitch",
+    "name": "Pica 10 Pitch",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "monospace",
+    "freeAlt": "special-elite",
+    "url": "https://www.myfonts.com/search/Pica%2010%20Pitch/fonts/"
+  },
+  {
+    "id": "typewriter",
+    "name": "Typewriter",
+    "foundry": "Monotype / Linotype",
+    "price": "From $29",
+    "category": "monospace",
+    "freeAlt": "courier-prime",
+    "url": "https://www.myfonts.com/search/Typewriter/fonts/"
+  },
+  {
+    "id": "input",
+    "name": "Input",
+    "foundry": "DJR",
+    "price": "Commercial",
+    "category": "monospace",
+    "freeAlt": "jetbrains-mono",
+    "url": "https://input.djr.com"
+  },
+  {
+    "id": "operator-mono",
+    "name": "Operator Mono",
+    "foundry": "Hoefler & Co",
+    "price": "From $60",
+    "category": "monospace",
+    "freeAlt": "jetbrains-mono",
+    "url": "https://www.typography.com"
+  },
+  {
+    "id": "ff-letter-gothic",
+    "name": "FF Letter Gothic",
+    "foundry": "FontFont",
+    "price": "Commercial",
+    "category": "monospace",
+    "freeAlt": "space-mono",
+    "url": "https://www.myfonts.com/search/FF%20Letter%20Gothic/fonts/"
+  }
+]

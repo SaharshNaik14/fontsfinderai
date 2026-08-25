@@ -1,0 +1,58 @@
+---
+import Layout from '../components/Layout.astro';
+import { SITE } from '../lib/site';
+const updated = 'July 2026';
+---
+
+<Layout
+	path="/terms"
+	title="Terms of service"
+	description={`Terms of service for ${SITE.name}.`}
+	canonical="/terms"
+>
+	<section class="container-page py-12 sm:py-16">
+		<div class="container-prose">
+			<p class="eyebrow">Legal</p>
+			<h1 class="mt-3 text-display-lg font-semibold tracking-tight">Terms of service</h1>
+			<p class="mt-2 text-caption text-mute">Last updated: {updated}</p>
+
+			<div class="prose mt-6">
+				<p>
+					By using {SITE.name} (the “Site”) you agree to these terms. If you don’t agree, please don’t
+					use the Site.
+				</p>
+				<h2>Use of the service</h2>
+				<p>
+					The font finder is provided free of charge for personal and commercial research. You agree not
+					to abuse the service: no automated scraping, no attempts to bypass rate limits, no uploading
+					of unlawful content, and no use that could harm the Site or other users.
+				</p>
+				<h2>No warranty</h2>
+				<p>
+					The service is provided “as is” and “as available”, without warranties of any kind, express or
+					implied. Font identification results are suggestions, not guarantees — verify matches yourself
+					before relying on them.
+				</p>
+				<h2>Font licensing</h2>
+				<p>
+					{SITE.name} does not sell or license fonts. Free fonts listed on the Site are subject to their
+					own open-source licenses; commercial fonts are subject to the foundry’s license. It is your
+					responsibility to check and comply with the applicable license before using any font in your
+					projects.
+				</p>
+				<h2>Limitation of liability</h2>
+				<p>
+					To the maximum extent permitted by law, {SITE.name} and its operators are not liable for any
+					indirect, incidental, or consequential damages arising from your use of the Site.
+				</p>
+				<h2>Changes</h2>
+				<p>We may revise these terms at any time. Continued use of the Site after changes constitutes acceptance.</p>
+				<h2>Contact</h2>
+				<p>
+					Questions? Email{' '}
+					<a href={`mailto:hello@${SITE.domain}`}>hello@{SITE.domain}</a>.
+				</p>
+			</div>
+		</div>
+	</section>
+</Layout>

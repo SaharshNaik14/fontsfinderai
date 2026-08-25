@@ -1,0 +1,30 @@
+---
+import Layout from '../../components/Layout.astro';
+import { guides } from '../../data/guides';
+---
+
+<Layout
+	path="/guides"
+	title="Typography guides"
+	description="Practical typography guides: how to identify fonts from images, find free alternatives, understand font categories, and use custom fonts on the web."
+	canonical="/guides"
+>
+	<section class="container-page py-12 sm:py-16">
+		<p class="eyebrow">Guides</p>
+		<h1 class="mt-3 text-display-lg font-semibold tracking-tight">Typography, explained simply</h1>
+		<p class="mt-3 max-w-2xl text-body-lg text-body">
+			Short, practical guides written by people who spend too much time looking at letterforms.
+		</p>
+
+		<div class="mt-10 grid gap-6 sm:grid-cols-2">
+			{guides.map((guide) => (
+				<article class="flex flex-col rounded-lg border border-hairline bg-canvas p-6 shadow-level-1">
+					<h2 class="text-display-sm font-semibold tracking-tight">{guide.title}</h2>
+					<p class="text-caption text-mute">{guide.read} read</p>
+					<p class="mt-3 flex-1 text-body-md text-body">{guide.description}</p>
+					<a href={`/guides/${guide.slug}`} class="btn btn-primary btn-sm mt-5 self-start">Read the guide</a>
+				</article>
+			))}
+		</div>
+	</section>
+</Layout>

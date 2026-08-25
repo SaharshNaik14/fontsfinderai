@@ -1,0 +1,36 @@
+---
+import Layout from '../components/Layout.astro';
+import { SITE } from '../lib/site';
+---
+
+<Layout
+	path="/contact"
+	title="Contact"
+	description={`Contact ${SITE.name}: questions, feedback, or a font we couldn't identify.`}
+	canonical="/contact"
+>
+	<section class="container-page py-12 sm:py-16">
+		<div class="container-prose">
+			<p class="eyebrow">Contact</p>
+			<h1 class="mt-3 text-display-lg font-semibold tracking-tight">Talk to a human</h1>
+			<p class="mt-3 text-body-lg text-body">
+				Found a font we couldn’t name? Spotted a bug? Just want to say hello?
+			</p>
+
+			<div class="mt-8 space-y-4">
+				<p class="text-body-md text-body">
+					The fastest way to reach us is email:
+				</p>
+				<a
+					class="btn btn-primary"
+					href={`mailto:hello@${SITE.domain}?subject=Fonts%20Finder%20AI`}
+				>
+					hello@{SITE.domain}
+				</a>
+				<p class="text-caption text-mute">
+					We read everything and reply to everyone.
+				</p>
+			</div>
+		</div>
+	</section>
+</Layout>

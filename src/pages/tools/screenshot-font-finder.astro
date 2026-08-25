@@ -1,0 +1,52 @@
+---
+import Layout from '../../components/Layout.astro';
+import Matcher from '../../components/Matcher.astro';
+---
+
+<Layout
+	path="/tools/screenshot-font-finder"
+	title="Screenshot Font Finder — Identify a Font From a Screenshot"
+	description="Take a screenshot of any text and find the font in seconds. Free screenshot font finder that runs in your browser — no account, no upload, no limits."
+	canonical="/tools/screenshot-font-finder"
+>
+	<section class="container-page py-12 sm:py-16">
+		<p class="eyebrow">Tools</p>
+		<h1 class="mt-3 max-w-3xl text-display-lg font-semibold tracking-tight">
+			Screenshot font finder
+		</h1>
+		<p class="mt-3 max-w-2xl text-body-lg text-body">
+			Screenshots are the easiest case there is: pixel-sharp, horizontal, undistorted letters.
+			Paste one below and get ranked matches against 1,800+ free fonts.
+		</p>
+
+		<div class="mx-auto mt-8 max-w-3xl text-left">
+			<Matcher />
+		</div>
+	</section>
+
+	<section class="container-page pb-16 sm:pb-24">
+		<div class="max-w-3xl">
+			<h2 class="text-display-md font-semibold tracking-tight">How to identify a font from a screenshot</h2>
+			<ol class="mt-4 list-decimal space-y-2 pl-6 text-body-md text-body">
+				<li>Capture the text — on Windows press Win+Shift+S, on Mac ⌘⇧4, or paste straight into the box above with Ctrl/Cmd+V.</li>
+				<li>Drag to crop just the word you want identified. One font per crop.</li>
+				<li>Check the detected letters, fix any misreads, and read the ranked matches.</li>
+			</ol>
+
+			<h2 class="mt-10 text-display-md font-semibold tracking-tight">Tips for better screenshot matches</h2>
+			<ul class="mt-4 list-disc space-y-2 pl-6 text-body-md text-body">
+				<li>Capture at 100% zoom or higher so letter edges stay crisp.</li>
+				<li>Favor PNG over JPEG — JPEG ringing artifacts sit exactly where letterforms live.</li>
+				<li>Include a full word or two; three or more letters is far stronger evidence than one.</li>
+				<li>Lowercase carries more identifying detail than capitals.</li>
+				<li>Light text on dark backgrounds works fine — polarity is handled automatically.</li>
+			</ul>
+
+			<p class="mt-8 text-body-md text-body">
+				Everything runs locally in your browser — your screenshot is never uploaded anywhere. For
+				photos of physical signs, use the same tool; for joined-up script, see our{' '}
+				<a class="text-link hover:underline" href="/tools/handwriting-font-finder">handwriting font finder</a>.
+			</p>
+		</div>
+	</section>
+</Layout>

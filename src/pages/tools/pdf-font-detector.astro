@@ -1,0 +1,58 @@
+---
+import Layout from '../../components/Layout.astro';
+import Matcher from '../../components/Matcher.astro';
+---
+
+<Layout
+	path="/tools/pdf-font-detector"
+	title="PDF Font Detector — Identify Fonts Used in a PDF"
+	description="Find out which fonts a PDF uses. Check embedded fonts first, then identify flattened or scanned text visually with the free PDF font detector."
+	canonical="/tools/pdf-font-detector"
+>
+	<section class="container-page py-12 sm:py-16">
+		<p class="eyebrow">Tools</p>
+		<h1 class="mt-3 max-w-3xl text-display-lg font-semibold tracking-tight">
+			PDF font detector
+		</h1>
+		<p class="mt-3 max-w-2xl text-body-lg text-body">
+			A PDF often records its own fonts internally — checking that beats any visual match. When the
+			text is scanned, outlined or flattened, screenshot it and match the letterforms below.
+		</p>
+
+		<div class="mx-auto mt-8 max-w-3xl text-left">
+			<Matcher />
+		</div>
+	</section>
+
+	<section class="container-page pb-16 sm:pb-24">
+		<div class="max-w-3xl">
+			<h2 class="text-display-md font-semibold tracking-tight">Step 1 — read the embedded font list</h2>
+			<p class="mt-4 text-body-md text-body">
+				If the text is selectable, the exact name is usually one menu away: in Adobe Acrobat open{' '}
+				<strong>File → Properties → Fonts</strong>; in a browser, print to “Save as PDF” and inspect
+				the output properties; many viewers also list fonts under document info. This gives you the
+				true name — no matching needed.
+			</p>
+
+			<h2 class="mt-10 text-display-md font-semibold tracking-tight">Step 2 — visual matching for flattened pages</h2>
+			<ol class="mt-4 list-decimal space-y-2 pl-6 text-body-md text-body">
+				<li>Zoom to 200–300% so the letters render sharply on screen.</li>
+				<li>Screenshot just the word you care about — headings and body text are usually different typefaces.</li>
+				<li>Paste it above and crop tightly before matching.</li>
+			</ol>
+
+			<h2 class="mt-10 text-display-md font-semibold tracking-tight">When the PDF is the problem</h2>
+			<ul class="mt-4 list-disc space-y-2 pl-6 text-body-md text-body">
+				<li><strong>Outlined text</strong> has no font data at all — visual matching is the only route.</li>
+				<li><strong>Scanned pages</strong> work like any photo: flat, straight-on crops give the best read.</li>
+				<li><strong>Subset fonts</strong> (names like “ABCDEF+Roboto-Bold”) still contain the real family name after the prefix.</li>
+			</ul>
+
+			<p class="mt-8 text-body-md text-body">
+				Most PDFs are typeset with common families — Roboto, Montserrat, Lato and Open Sans top the
+				list — all of which are in the matcher’s catalog. Your screenshots stay on your device;
+				matching runs entirely client-side.
+			</p>
+		</div>
+	</section>
+</Layout>

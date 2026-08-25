@@ -1,0 +1,52 @@
+---
+import Layout from '../../components/Layout.astro';
+import Matcher from '../../components/Matcher.astro';
+---
+
+<Layout
+	path="/tools/handwriting-font-finder"
+	title="Handwriting Font Finder — Identify Script and Handwritten Text"
+	description="Identify handwriting and script fonts from an image. Free handwriting font finder with whole-word matching that handles letters which run together."
+	canonical="/tools/handwriting-font-finder"
+>
+	<section class="container-page py-12 sm:py-16">
+		<p class="eyebrow">Tools</p>
+		<h1 class="mt-3 max-w-3xl text-display-lg font-semibold tracking-tight">
+			Handwriting font finder
+		</h1>
+		<p class="mt-3 max-w-2xl text-body-lg text-body">
+			Cursive and script faces are the hardest case in font identification — their letters connect,
+			so they can’t be measured one at a time. This tool matches them as a whole word instead.
+		</p>
+
+		<div class="mx-auto mt-8 max-w-3xl text-left">
+			<Matcher />
+		</div>
+	</section>
+
+	<section class="container-page pb-16 sm:pb-24">
+		<div class="max-w-3xl">
+			<h2 class="text-display-md font-semibold tracking-tight">How to identify a script or handwriting font</h2>
+			<ol class="mt-4 list-decimal space-y-2 pl-6 text-body-md text-body">
+				<li>Crop a single word where the letters are as separate as the face allows.</li>
+				<li>If the tool can’t split the letters, it says so — check the detected-letters editor and correct what it did read.</li>
+				<li>Compare the ranked results by eye; for connected scripts the top five matter more than number one.</li>
+			</ol>
+
+			<h2 class="mt-10 text-display-md font-semibold tracking-tight">Honest expectations for cursive text</h2>
+			<ul class="mt-4 list-disc space-y-2 pl-6 text-body-md text-body">
+				<li>Joined-up lettering cannot be measured per letter, so this case is labelled as suggestions rather than confident answers.</li>
+				<li>Print-style handwriting (separate letters, like Comic Sans or Architects Daughter) matches far more reliably than true cursive.</li>
+				<li>Flourishes, swashes and ligatures distort shape scores — crop through the calmest part of the word you can find.</li>
+			</ul>
+
+			<p class="mt-8 text-body-md text-body">
+				The catalog behind the matcher includes hundreds of script, display and handwriting families
+				from Google Fonts. Browse them all on the{' '}
+				<a class="text-link hover:underline" href="/fonts?category=handwriting">fonts page</a>, or use the{' '}
+				<a class="text-link hover:underline" href="/tools/screenshot-font-finder">screenshot font finder</a>{' '}
+				for cleaner printed samples.
+			</p>
+		</div>
+	</section>
+</Layout>

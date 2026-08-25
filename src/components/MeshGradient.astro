@@ -1,0 +1,21 @@
+---
+interface Props {
+	class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<div class={`pointer-events-none absolute inset-0 overflow-hidden ${className}`} aria-hidden="true">
+	<div
+		class="absolute -top-32 left-1/2 h-[480px] w-[720px] -translate-x-1/2 rounded-full opacity-30 blur-3xl"
+		style="background: radial-gradient(closest-side, var(--color-grad-develop-start), transparent 70%);"
+	></div>
+	<div
+		class="absolute -left-40 top-10 h-[380px] w-[380px] rounded-full opacity-25 blur-3xl"
+		style="background: radial-gradient(closest-side, var(--color-grad-preview-start), transparent 70%);"
+	></div>
+	<div
+		class="absolute -right-40 top-24 h-[380px] w-[380px] rounded-full opacity-20 blur-3xl"
+		style="background: radial-gradient(closest-side, var(--color-grad-ship-start), transparent 70%);"
+	></div>
+</div>

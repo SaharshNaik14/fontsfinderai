@@ -1,0 +1,204 @@
+---
+import { SITE } from '../lib/site';
+---
+
+<section id="matcher" class="scroll-mt-20">
+	<div class="gradient-border relative rounded-xl p-5 shadow-level-3 sm:p-6" data-matcher="root">
+		<div
+			class="grid place-items-center gap-2 rounded-lg border-2 border-dashed border-hairline-strong bg-canvas-soft p-10 text-center transition-colors"
+			data-matcher="dropzone"
+			role="button"
+			tabindex="0"
+			aria-label="Upload an image of a font"
+		>
+			<div class="grid size-12 place-items-center rounded-full bg-canvas shadow-level-2">
+				<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="text-mute" aria-hidden="true">
+					<path d="M12 16V4m0 0 4 4m-4-4-4 4"></path>
+					<path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
+				</svg>
+			</div>
+			<p class="text-body-md font-medium">
+				Drag &amp; drop your image here, or
+				<button type="button" class="text-link underline underline-offset-2" data-matcher="browse">browse</button>
+			</p>
+			<p class="text-caption text-mute">You can also paste from your clipboard</p>
+			<button type="button" class="btn btn-ghost btn-sm mt-2" data-matcher="example">Try an example</button>
+		</div>
+
+		<input
+			type="file"
+			accept="image/png,image/jpeg,image/webp"
+			class="hidden"
+			data-matcher="file-input"
+		/>
+
+		<div class="mt-4 flex flex-col gap-4 sm:flex-row" data-matcher="uploaded">
+			<img
+				class="max-h-56 w-full max-w-40 rounded-lg border border-hairline bg-canvas-soft object-contain"
+				alt="Your uploaded image"
+				data-matcher="preview-img"
+			/>
+			<div class="flex flex-col justify-between gap-3">
+				<p class="text-body-sm text-body" data-matcher="state-note"></p>
+				<div class="flex flex-wrap gap-2">
+					<button type="button" class="btn btn-ghost btn-sm" data-matcher="reupload">
+						Choose a different image
+					</button>
+					<button type="button" class="btn btn-ghost btn-sm hidden" data-matcher="adjust-crop">
+						Adjust crop
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Crop stage: drag to select just the text, or identify the full image -->
+		<div class="mt-4 hidden" data-matcher="crop-stage">
+			<div class="rounded-lg border border-hairline bg-canvas-soft p-3">
+				<p class="text-body-sm text-body">
+					<span class="font-medium text-ink">Drag to select just the text.</span>
+					Tighter crops are far more accurate.
+				</p>
+				<div class="mt-2 flex justify-center rounded-md bg-canvas p-2" data-matcher="crop-surface">
+					<div
+						class="relative w-fit cursor-crosshair touch-none select-none"
+						data-matcher="crop-wrap"
+					>
+						<img
+							class="block max-h-[380px] max-w-full select-none rounded"
+							draggable="false"
+							alt="Select the text you want identified"
+							data-matcher="crop-img"
+						/>
+						<div
+							class="pointer-events-none absolute hidden border-2 border-link bg-link/10"
+							data-matcher="crop-box"
+						></div>
+					</div>
+				</div>
+				<div class="mt-3 flex flex-wrap items-center gap-2">
+					<button type="button" class="btn btn-primary btn-sm" disabled data-matcher="crop-identify">
+						Identify selection
+					</button>
+					<button type="button" class="btn btn-ghost btn-sm" data-matcher="crop-full">
+						Use full image
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="mt-4 grid gap-3">
+			<div
+				class="hidden rounded-md border border-hairline bg-canvas-soft p-3"
+				data-matcher="char-edit"
+			>
+				<div class="flex flex-wrap items-center justify-between gap-2">
+					<span class="text-caption font-medium text-mute">
+						Detected letters &mdash; fix any mistakes, then re-match
+					</span>
+					<button type="button" class="btn btn-ghost btn-sm" data-matcher="apply-chars">
+						Re-match with corrections
+					</button>
+				</div>
+				<div class="mt-2 flex flex-wrap items-end gap-1" data-matcher="char-row"></div>
+			</div>
+		</div>
+
+		<div class="mt-4 hidden" data-matcher="progress">
+			<div class="flex items-center justify-between gap-3">
+				<p class="text-caption text-mute" data-matcher="progress-text"></p>
+			</div>
+			<div class="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-hairline">
+				<div class="h-full rounded-full bg-gradient-to-r from-[var(--color-grad-develop-start)] to-[var(--color-grad-preview-end)] transition-[width] duration-200" style="width: 0%" data-matcher="progress-bar"></div>
+			</div>
+		</div>
+
+		<div class="mt-4 hidden rounded-md border border-hairline bg-canvas-soft px-3 py-2 text-body-sm text-error" role="alert" data-matcher="error">
+			<span data-matcher="error-text"></span>
+		</div>
+
+		<div class="mt-6 hidden" data-matcher="results">
+			<div class="flex flex-wrap items-center gap-2" data-matcher="ai-summary" hidden></div>
+
+			<!-- Low-evidence warning: few letters detected -->
+			<div
+				class="mt-4 hidden rounded-md border border-hairline bg-canvas-soft px-3 py-2 text-body-sm text-body"
+				data-matcher="low-evidence"
+			></div>
+
+			<!-- Your image stays pinned while matches scroll past — side-by-side comparison -->
+			<div
+				class="sticky top-16 z-20 mt-4 hidden items-center gap-3 rounded-lg border border-hairline bg-canvas/95 px-3 py-2 backdrop-blur-md"
+				data-matcher="sticky-word"
+			>
+				<span class="shrink-0 text-caption font-medium text-mute">Your image</span>
+				<div class="flex min-w-0 flex-1 items-center justify-center overflow-hidden rounded bg-canvas-soft p-1" data-matcher="sticky-img"></div>
+			</div>
+
+			<div class="mt-4 flex flex-wrap items-center justify-between gap-3" data-matcher="tabs">
+				<div class="flex items-center gap-1 rounded-lg border border-hairline bg-canvas-soft p-1">
+					<button type="button" class="tab-btn is-active" data-matcher="all-tab">All</button>
+					<button type="button" class="tab-btn" data-matcher="free-tab">Free</button>
+					<button type="button" class="tab-btn" data-matcher="paid-tab">Paid</button>
+				</div>
+				<label class="flex cursor-pointer items-center gap-2 text-body-sm text-body">
+					<input type="checkbox" class="accent-[var(--color-primary)]" data-matcher="free-only" />
+					Free only
+				</label>
+			</div>
+
+			<div class="mt-3">
+				<label class="block">
+					<span class="mb-1 block text-caption font-medium text-mute">Preview text</span>
+					<input
+						type="text"
+						class="w-full max-w-md rounded-md border border-hairline bg-canvas px-3 py-2 text-body-md text-ink placeholder:text-mute focus:border-hairline-strong focus:outline-none"
+						placeholder={SITE.previewText}
+						data-matcher="preview-text"
+					/>
+				</label>
+			</div>
+
+			<div class="mt-6 hidden rounded-lg border border-hairline bg-canvas-soft p-4" data-matcher="how">
+				<h3 class="eyebrow mb-3">How this was matched</h3>
+				<div class="flex flex-wrap items-end gap-1" data-matcher="how-letters"></div>
+				<p class="mt-3 text-caption text-mute" data-matcher="how-facts"></p>
+			</div>
+
+			<h3 class="eyebrow mt-6 mb-3">Best free matches</h3>
+			<ul class="grid gap-3" data-matcher="free-list"></ul>
+
+			<h3 class="eyebrow mt-8 mb-3">Possibly a paid font?</h3>
+			<ul class="grid gap-3" data-matcher="paid-list" hidden></ul>
+		</div>
+	</div>
+</section>
+
+<style>
+	.tab-btn {
+		padding: 6px 12px;
+		border-radius: 8px;
+		font-size: 14px;
+		font-weight: 500;
+		color: var(--color-mute);
+		transition: color 0.15s ease;
+	}
+	.tab-btn:hover {
+		color: var(--color-ink);
+	}
+	.tab-btn.is-active {
+		background: var(--color-canvas);
+		color: var(--color-ink);
+		box-shadow: var(--shadow-level-1);
+	}
+	[data-matcher="dropzone"].is-dragging {
+		border-color: var(--color-link);
+		background: var(--color-canvas-soft-2);
+	}
+</style>
+
+<script>
+	import { initMatcher } from '../lib/client/matcher-ui';
+
+	const root = document.getElementById('matcher');
+	if (root) initMatcher(root);
+</script>

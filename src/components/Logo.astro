@@ -1,0 +1,36 @@
+---
+interface Props {
+	withText?: boolean;
+}
+const { withText = true } = Astro.props;
+---
+
+<a href="/" class="flex items-center gap-2.5" aria-label="Fonts Finder AI — home">
+	<span class="grid size-8 shrink-0 place-items-center rounded-lg bg-primary">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="18"
+			height="18"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			class="text-on-primary"
+			aria-hidden="true"
+		>
+			<path d="M8 20V8c0-2.2 1.8-4 4-4 1.5 0 2.8.8 3.5 2"></path>
+			<path d="M6 12h4"></path>
+			<path d="M14 12h2v8"></path>
+			<path d="M6 20h4"></path>
+			<path d="M14 20h4"></path>
+		</svg>
+	</span>
+	{withText && (
+		<span class="flex items-baseline gap-1 whitespace-nowrap">
+			<span class="text-body-md font-semibold tracking-tight">Fonts Finder</span>
+			<span class="gradient-text font-mono text-caption font-semibold tracking-[0.12em]">AI</span>
+		</span>
+	)}
+</a>

@@ -1,0 +1,17 @@
+---
+import Layout from '../components/Layout.astro';
+---
+
+<Layout noindex title="Page not found" description="This page doesn't exist.">
+	<section class="container-page py-24 text-center sm:py-32">
+		<p class="gradient-text font-mono text-display-lg font-semibold">404</p>
+		<h1 class="mt-3 text-display-lg font-semibold tracking-tight">This page lost its way</h1>
+		<p class="mx-auto mt-3 max-w-md text-body-lg text-body">
+			The page you’re looking for doesn’t exist. Maybe it was never set in this typeface.
+		</p>
+		<div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+			<a href="/" class="btn btn-primary">Back home</a>
+			<a href="/#matcher" class="btn btn-ghost">Identify a font</a>
+		</div>
+	</section>
+</Layout>

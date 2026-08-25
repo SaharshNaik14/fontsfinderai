@@ -1,0 +1,85 @@
+---
+import Layout from '../../components/Layout.astro';
+
+const tools = [
+	{
+		title: 'Font Finder',
+		body: 'Upload an image and instantly identify the typeface — free fonts and commercial fonts, ranked with a free alternative for every paid match.',
+		href: '/#matcher',
+		cta: 'Identify a font',
+	},
+	{
+		title: 'Screenshot font finder',
+		body: 'Paste a screenshot of any text and find the font in seconds — pixel-sharp screenshots are the easiest case there is.',
+		href: '/tools/screenshot-font-finder',
+		cta: 'Match a screenshot',
+	},
+	{
+		title: 'Logo font identifier',
+		body: 'Identify the typeface behind a wordmark or logo — with free alternatives whenever the original is drawn artwork or a licensed face.',
+		href: '/tools/logo-font-identifier',
+		cta: 'Identify a logo font',
+	},
+	{
+		title: 'Handwriting font finder',
+		body: 'Cursive and script faces can’t be measured letter by letter — this flow matches them as whole words instead.',
+		href: '/tools/handwriting-font-finder',
+		cta: 'Identify script text',
+	},
+	{
+		title: 'PDF font detector',
+		body: 'Read the fonts embedded in a PDF directly, then visually match any scanned or outlined text that has no font data.',
+		href: '/tools/pdf-font-detector',
+		cta: 'Detect PDF fonts',
+	},
+	{
+		title: 'Free alternative finder',
+		body: 'Found a commercial font you love but can’t afford the license? Every paid typeface in our database has a free lookalike we recommend.',
+		href: '/tools/free-font-alternative-finder',
+		cta: 'See free alternatives',
+	},
+	{
+		title: 'Font catalog',
+		body: 'Browse all 1,800+ free Google Fonts by category or search by name and designer. Every family links to a preview and download page.',
+		href: '/fonts',
+		cta: 'Browse fonts',
+	},
+	{
+		title: 'Free alternative finder',
+		body: 'Found a commercial font you love but can’t afford the license? Every paid typeface in our database has a free lookalike we recommend.',
+		href: '/fonts?category=sans-serif',
+		cta: 'See free alternatives',
+	},
+	{
+		title: 'Live text preview',
+		body: 'Type your own words and watch them render in any candidate font from your identification results — perfect for judging a match before you commit.',
+		href: '/#matcher',
+		cta: 'Try the preview',
+	},
+];
+---
+
+<Layout
+	path="/tools"
+	title="Free font tools"
+	description="Free, no-account font tools: identify fonts from images, browse 1,800+ free fonts, and find free alternatives to commercial typefaces."
+	canonical="/tools"
+>
+	<section class="container-page py-12 sm:py-16">
+		<p class="eyebrow">Tools</p>
+		<h1 class="mt-3 text-display-lg font-semibold tracking-tight">Free tools for font hunters</h1>
+		<p class="mt-3 max-w-2xl text-body-lg text-body">
+			Everything here is free and unlimited. No accounts, no paywalls, no email sign-ups.
+		</p>
+
+		<div class="mt-10 grid gap-6 sm:grid-cols-2">
+			{tools.map((tool) => (
+				<article class="flex flex-col rounded-lg border border-hairline bg-canvas p-6 shadow-level-1">
+					<h2 class="text-display-sm font-semibold tracking-tight">{tool.title}</h2>
+					<p class="mt-2 flex-1 text-body-md text-body">{tool.body}</p>
+					<a href={tool.href} class="btn btn-primary btn-sm mt-5 self-start">{tool.cta}</a>
+				</article>
+			))}
+		</div>
+	</section>
+</Layout>
