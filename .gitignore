@@ -24,3 +24,8 @@ pnpm-debug.log*
 .idea/
 
 .fonts-cache/
+
+# local dev artifacts
+.wrangler/
+preview.err
+preview.log
