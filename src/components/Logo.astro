@@ -5,7 +5,7 @@ interface Props {
 const { withText = true } = Astro.props;
 ---
 
-<a href="/" class="flex items-center gap-2.5" aria-label="Fonts Finder AI — home">
+<a href="/" class="flex items-center gap-2.5" aria-label="Spot That Font — home">
 	<span class="grid size-8 shrink-0 place-items-center rounded-lg bg-primary">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -29,8 +29,7 @@ const { withText = true } = Astro.props;
 	</span>
 	{withText && (
 		<span class="flex items-baseline gap-1 whitespace-nowrap">
-			<span class="text-body-md font-semibold tracking-tight">Fonts Finder</span>
-			<span class="gradient-text font-mono text-caption font-semibold tracking-[0.12em]">AI</span>
+			<span class="text-body-md font-semibold tracking-tight">Spot That Font</span>
 		</span>
 	)}
 </a>

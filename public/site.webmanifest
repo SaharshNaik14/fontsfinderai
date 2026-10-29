@@ -1,6 +1,6 @@
 {
-  "name": "fontsfinderai",
-  "short_name": "fontsfinder",
+  "name": "spotthatfont",
+  "short_name": "spotthatfont",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

@@ -43,7 +43,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const out = join(root, 'src', 'data');
 
 const res = await fetch('https://fonts.google.com/metadata/fonts', {
-	headers: { 'user-agent': 'fonts-finder-ai/1.0 (+https://fontsfinderai.com)' },
+	headers: { 'user-agent': 'spot-that-font/1.0 (+https://spotthatfont.com)' },
 });
 if (!res.ok) throw new Error(`metadata/fonts failed: ${res.status}`);
 const raw = await res.json();

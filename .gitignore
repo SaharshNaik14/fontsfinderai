@@ -29,3 +29,6 @@ pnpm-debug.log*
 .wrangler/
 preview.err
 preview.log
+
+# personal files (never publish)
+resume/
