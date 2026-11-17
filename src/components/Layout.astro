@@ -89,8 +89,14 @@ const pageTitle = canonical === '/' ? title : `${title} — ${SITE.name}`;
 		)}
 		{SITE.gaId && (
 			<>
-				<script is:inline>
-					{`(function(){var id=${JSON.stringify(SITE.gaId)};var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+id;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config',id);})();`}
+				<script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${SITE.gaId}`}></script>
+				<script is:inline define:vars={{ gaId: SITE.gaId }}>
+					window.dataLayer = window.dataLayer || [];
+					function gtag() {
+						dataLayer.push(arguments);
+					}
+					gtag('js', new Date());
+					gtag('config', gaId);
 				</script>
 			</>
 		)}
